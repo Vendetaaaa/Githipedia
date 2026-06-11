@@ -1,0 +1,68 @@
+[package]
+name = "git-rescope"
+version = "0.1.0"
+edition = "2021"
+authors = ["git-rescope contributors"]
+description = "Instantly snapshot, clean, and restore your entire development context"
+license = "MIT"
+repository = "https://github.com/git-rescope/git-rescope"
+keywords = ["git", "developer-tools", "productivity", "workspace", "snapshot"]
+categories = ["command-line-utilities", "development-tools"]
+readme = "README.md"
+
+[[bin]]
+name = "grs"
+path = "src/main.rs"
+
+[dependencies]
+# CLI parsing
+clap = { version = "4", features = ["derive", "color", "unicode"] }
+
+# Git integration (native libgit2 bindings — no shell git calls)
+git2 = { version = "0.18", features = ["vendored-libgit2"] }
+
+# Serialization
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+# TUI
+ratatui = "0.26"
+crossterm = "0.27"
+
+# UUIDs for snapshot IDs
+uuid = { version = "1", features = ["v4"] }
+
+# Time / timestamps
+chrono = { version = "0.4", features = ["serde"] }
+
+# Error handling
+anyhow = "1"
+thiserror = "1"
+
+# Filesystem helpers
+dirs = "5"
+walkdir = "2"
+
+# Logging (structured, no stdout pollution in TUI mode)
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+tracing-appender = "0.2"
+
+# Hashing for integrity verification (security)
+sha2 = "0.10"
+hmac = "0.12"
+hex = "0.4"
+
+# Zeroize secrets from memory on drop
+zeroize = { version = "1", features = ["derive"] }
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+strip = true
+panic = "abort"
+
+[profile.dev]
+opt-level = 0
+debug = true
