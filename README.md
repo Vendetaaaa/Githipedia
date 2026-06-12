@@ -35,6 +35,7 @@ It's a living project. New guides get added, existing ones get updated when thin
 | 📄 | [**Github Pages**](./REPOS/REPO%206%20-%20Page/README.md) | How to host easily and free a page with github |
 | 🌌 | [**Github CLI**](./REPOS/REPO%207%20-%20CLI/README.md) | How can you do everything inside your terminal, easy and efficient for devs |
 | 🏪 | [**Github's Enterprise & Open Source Management**](./REPOS/REPO%208%20-%20EOSM/README.md) | How devs get funded & how to monetize yout tools via Github Action |
+| 👴 | [**Github's History**](./REPOS/REPO%209%20-%20History/README.md) | The history of the biggest open-source platform |
  
 </div>
 
