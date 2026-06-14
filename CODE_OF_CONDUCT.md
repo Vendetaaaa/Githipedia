@@ -6,7 +6,7 @@
 
 ## The Short Version
 
-Don't make a community, make a home :)
+We are more than a community; we are a home :)
 
 ---
 
