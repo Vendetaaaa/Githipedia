@@ -1,7 +1,11 @@
 <div align="center">
 
 ![Githipedia](https://capsule-render.vercel.app/api?type=blur&height=280&color=B91C1C&text=Githipedia&section=header&fontColor=FCA5A5&fontAlignY=36&desc=Everything+about+GitHub%2C+in+one+place.+%F0%9F%94%A5&descAlignY=57&descSize=20)
- 
+
+#### **We are more than a community; we are a home :)**
+
+</br>
+
 ![Guides](https://img.shields.io/badge/4_Guides-B91C1C?style=for-the-badge&labelColor=1a1a1a)
 ![More Coming](https://img.shields.io/badge/More_Coming_Soon-7F1D1D?style=for-the-badge&labelColor=1a1a1a)
 ![Last Updated](https://img.shields.io/badge/Last%20Updated-2026-991B1B?style=for-the-badge&labelColor=1a1a1a)
