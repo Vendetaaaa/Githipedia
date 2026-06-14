@@ -82,6 +82,14 @@ MIT: fork it, adapt it, translate it, share it freely.
 Everything in this repo is open source. See [LICENSE](./LICENSE) for the full text.
  
 ---
+
+## Check out also:
+
+- [Code of conduit](./CODE_OF_CONDUCT.md)
+- [Contributing](./CONTRIBUTING.md)
+- [Credits](./CREDITS.md)
+- [Security](./SECURITY.md)
+- [LICENSE (Once again)](./LICENSE)
  
 <div align="center">
 
