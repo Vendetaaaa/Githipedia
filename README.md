@@ -85,7 +85,7 @@ Everything in this repo is open source. See [LICENSE](./LICENSE) for the full te
 
 ## Check out also:
 
-- [Code of conduit](./CODE_OF_CONDUCT.md)
+- [Code of conduct](./CODE_OF_CONDUCT.md)
 - [Contributing](./CONTRIBUTING.md)
 - [Credits](./CREDITS.md)
 - [Security](./SECURITY.md)
