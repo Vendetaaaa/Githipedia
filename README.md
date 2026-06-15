@@ -25,11 +25,11 @@ It's a living project. New guides get added, existing ones get updated when thin
  
 ---
  
-## The Guides
+## The Documentations
  
 <div align="center">
 
-| | Guide | What It Covers |
+| | documentation | What It Covers |
 |:---:|:---|:---|
 | 🏆 | [**GitHub Achievements**](./REPOS/REPO%201%20-%20Achievements_and_Badges/README.md) | Every badge you can earn, step-by-step instructions for each one, and the stories behind the two legacy badges that are gone forever |
 | 🖼️ | [**GitHub Profile**](./REPOS/REPO%202%20-%20Profile/README.md) | Everything from avatar and bio to animated banners, stats cards, and the profile README trick most developers don't know about |
@@ -40,6 +40,7 @@ It's a living project. New guides get added, existing ones get updated when thin
 | 🌌 | [**Github CLI**](./REPOS/REPO%207%20-%20CLI/README.md) | How can you do everything inside your terminal, easy and efficient for devs |
 | 🏪 | [**Github's Enterprise & Open Source Management**](./REPOS/REPO%208%20-%20EOSM/README.md) | How devs get funded & how to monetize your tools via Github Action |
 | 👴 | [**Github's History**](./REPOS/REPO%209%20-%20History/README.md) | The history of the biggest open-source platform |
+| 🛡️ | [**GitHub Security & Secrets Management**](./REPOS/REPO%2010%20-%20SSM/README.md) | How to protect your .env files and stay away from botsssss |
  
 </div>
 
@@ -93,7 +94,6 @@ Everything in this repo is open source. See [LICENSE](./LICENSE) for the full te
 - [Contributing](./CONTRIBUTING.md)
 - [Credits](./CREDITS.md)
 - [Security](./SECURITY.md)
-- [LICENSE (Once again)](./LICENSE)
  
 <div align="center">
 
