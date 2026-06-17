@@ -41,6 +41,7 @@ It's a living project. New guides get added, existing ones get updated when thin
 | 🏪 | [**Github's Enterprise & Open Source Management**](./REPOS/REPO%208%20-%20EOSM/README.md) | How devs get funded & how to monetize your tools via Github Action |
 | 👴 | [**Github's History**](./REPOS/REPO%209%20-%20History/README.md) | The history of the biggest open-source platform |
 | 🛡️ | [**GitHub Security & Secrets Management**](./REPOS/REPO%2010%20-%20SSM/README.md) | How to protect your .env files and stay away from botsssss |
+| 💦 | [**Github's Hygiene, Reflog, and Fixing Mistakes**](./REPOS/REPO%2011%20-%20HRMF/README.md) | How to not panic if something goes wrong and, be calm and take a chill pill |
  
 </div>
 
