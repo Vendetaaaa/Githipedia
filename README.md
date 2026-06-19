@@ -60,6 +60,7 @@ It's a living project. New guides get added, existing ones get updated when thin
 | ⚙️ | [**Github Rescope**](./PROGRAMS/GRS) | Simple solution to a painful part of being a dev |
 | ⁉️ | [**Github Issue Labeler**](https://github.com/Vendetaaaa/issue-labeler) | How to handle multiple issues across multiple repos |
 | 💬 | [**Github README generator**](https://vendetaaaa.github.io/readme-generator/) | How to create a good profile without knowing markdown |
+| 🪪 | [**Github LICENSE updater**](./PROGRAMS/LYU) | Easy to change the date on LICENSE on all your github repos |
 
 </div>
 
