@@ -7,8 +7,12 @@ Part of [Githipedia](https://github.com/Vendetaaaa/Githipedia/tree/main/PROGRAMS
 ## Install
 
 ```bash
-pip install lyu
+pip install "git+https://github.com/Vendetaaaa/Githipedia.git#subdirectory=PROGRAMS/LYU"
 ```
+
+Requires Python 3.7+ and Git installed and on PATH.
+
+PyPI release (`pip install lyu`) coming soon.
 
 ## Usage
 
