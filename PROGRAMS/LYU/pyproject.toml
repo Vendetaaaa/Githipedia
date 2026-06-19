@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lyu"
+version = "0.1.0"
+description = "LYU (License Year Updater) - CLI tool to update copyright years in LICENSE files."
+readme = "README.md"
+requires-python = ">=3.7"
+license = { text = "MIT" }
+authors = [
+    { name = "Vendetaaaa" }
+]
+keywords = ["license", "copyright", "cli", "maintainer-tools"]
+classifiers = [
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Build Tools",
+]
+
+[project.urls]
+Homepage = "https://github.com/Vendetaaaa/Githipedia/tree/main/PROGRAMS/LYU"
+Source = "https://github.com/Vendetaaaa/Githipedia/tree/main/PROGRAMS/LYU"
+Issues = "https://github.com/Vendetaaaa/Githipedia/issues"
+
+[project.scripts]
+lyu = "license_year_updater.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
