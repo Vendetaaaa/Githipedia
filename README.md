@@ -23,7 +23,7 @@ Githipedia is the alternative. Every guide here is written to actually explain t
  
 It's a living project. New guides get added, existing ones get updated when things change, and the whole thing is open source. If something's wrong or missing, you can fix it.
 
-> ### There is always more on the way to help this open-source encyclopedia become richer and better.
+> ### 💡 There is always more on the way to help this open-source encyclopedia become richer and better.
  
 ---
  
