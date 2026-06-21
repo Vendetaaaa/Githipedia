@@ -43,7 +43,7 @@ It's a living project. New guides get added, existing ones get updated when thin
 | 🛡️ | [**GitHub Security & Secrets Management**](./REPOS/REPO%2010%20-%20SSM/README.md) | How to protect your .env files and stay away from botsssss |
 | 💦 | [**Github's Hygiene, Reflog, and Fixing Mistakes**](./REPOS/REPO%2011%20-%20HRMF/README.md) | How to not panic if something goes wrong and, be calm and take a chill pill |
 | ☁️ | [**Github's AI & Cloud Dev**](./REPOS/REPO%2012%20-%20AICD/README.md) | The guide to work with Github's AI and cloud tools |
-| 🫙 | [**Github's Codespaces & Devcontainers**](./REPOS/REPO%20%13%20-%20CDc/README.md) | The solution for projects to not work only locally |
+| 🫙 | [**Github's Codespaces & Devcontainers**](./REPOS/REPO%2013%20-%20CDc/README.md) | The solution for projects to not work only locally |
  
 </div>
 
