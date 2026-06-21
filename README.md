@@ -31,7 +31,7 @@ It's a living project. New guides get added, existing ones get updated when thin
  
 <div align="center">
 
-| | documentation | What It Covers |
+| | Documentations | What They Cover |
 |:---:|:---|:---|
 | 🏆 | [**GitHub Achievements**](./REPOS/REPO%201%20-%20Achievements_and_Badges/README.md) | Every badge you can earn, step-by-step instructions for each one, and the stories behind the two legacy badges that are gone forever |
 | 🖼️ | [**GitHub Profile**](./REPOS/REPO%202%20-%20Profile/README.md) | Everything from avatar and bio to animated banners, stats cards, and the profile README trick most developers don't know about |
@@ -55,13 +55,14 @@ It's a living project. New guides get added, existing ones get updated when thin
 
 <div align="center">
 
-| | Program | What It Does |
+| | Programs | What They Do |
 |:---:|:---|:---|
 | 💎 | [**Github Terminal DashBoard**](./PROGRAMS/Github%20Dashboard) | A rich, animated terminal dashboard for GitHub |
 | ⚙️ | [**Github Rescope**](./PROGRAMS/GRS) | Simple solution to a painful part of being a dev |
 | ⁉️ | [**Github Issue Labeler**](https://github.com/Vendetaaaa/issue-labeler) | How to handle multiple issues across multiple repos |
 | 💬 | [**Github README generator**](https://vendetaaaa.github.io/readme-generator/) | How to create a good profile without knowing markdown |
 | 🪪 | [**Github LICENSE updater**](./PROGRAMS/LYU) | Easy to change the date on LICENSE on all your github repos |
+| ❤️‍🩹 | [**Github Health Check**](https://github.com/Vendetaaaa/health-check) | A CLI tool made to verify your integrity and how to improve your repo |
 
 </div>
 
