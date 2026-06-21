@@ -22,6 +22,8 @@ GitHub has a lot going on. Achievements, profile READMEs, security advisories, e
 Githipedia is the alternative. Every guide here is written to actually explain things, not just list them. If you're new to something, you'll get the context you need. If you already know the basics, you can skip straight to what you're looking for.
  
 It's a living project. New guides get added, existing ones get updated when things change, and the whole thing is open source. If something's wrong or missing, you can fix it.
+
+> ### There is always more on the way to help this open-source encyclopedia become richer and better.
  
 ---
  
@@ -46,8 +48,6 @@ It's a living project. New guides get added, existing ones get updated when thin
 | 🫙 | [**Github's Codespaces & Devcontainers**](./REPOS/REPO%2013%20-%20CDc/README.md) | The solution for projects to not work only locally |
  
 </div>
-
-> More are on the way.
  
 ---
 
