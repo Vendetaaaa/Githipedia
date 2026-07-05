@@ -99,10 +99,7 @@ Everything in this repo is open source. See [LICENSE](./LICENSE) for the full te
 
 ## Check out also:
 
-- [Code of conduct](./CODE_OF_CONDUCT.md)
-- [Contributing](./CONTRIBUTING.md)
-- [Credits](./CREDITS.md)
-- [Security](./SECURITY.md)
+### [Code of conduct](./CODE_OF_CONDUCT.md) &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; [Contributing](./CONTRIBUTING.md) &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; [Credits](./CREDITS.md) &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; [Security](./SECURITY.md)
  
 <div align="center">
 
