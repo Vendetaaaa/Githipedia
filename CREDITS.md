@@ -12,15 +12,26 @@
 
 ---
 
-## Contributors
+## Admin Team
 
-These are the people who have opened pull requests, fixed mistakes, added guides, or otherwise improved the content of this repo.
+These are the people who made sure rules apply
+
+| Name | Github |
+| ---- | ------ |
+| - | - |
+
+---
+
+## Honorable Contributors
+
+These are the people who have opened pull requests, fixed mistakes, added guides, or otherwise improved the content of this repo by a large margin.
 
 | Name | GitHub | What they contributed |
 |------|--------|-----------------------|
 | - | - | - |
 
-! If you have contributed and are not listed here, contact the founder via email or github, this is **NOT** made for pull requests / suggestions / issues etc
+> ### If you have contributed and are not listed here, contact the founder via email or github, this is **NOT** made for pull requests / suggestions / issues etc.
+> #### Also take into consideration only those who make honorable fixes and modifications etc., based on loyalty.
 
 ---
 
