@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=B91C1C&text=Profile%20Mastery%20and%20Hidden%20Markdown&fontColor=DBEAFE&fontSize=38&section=header" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=B91C1C&text=Profile%20Mastery%20and%20Hidden%20Markdown&fontColor=FCA5A5&fontSize=38&section=header" width="100%" />
 
 <p align="center">
   <img alt="Depth" src="https://img.shields.io/badge/2_Deep_Dive-B91C1C?style=for-the-badge&labelColor=B91C1C&color=B91C1C" />
