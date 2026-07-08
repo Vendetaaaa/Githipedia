@@ -105,7 +105,7 @@ Use a `capsule-render` banner at the top and bottom of every `README.md`, matchi
 > There is not a "special" writing type but it is recommended to follow these:
 
 - Write like you are explaining something to a friend who knows what GitHub is but has not gone deep on this topic yet.
-- Clear steps. No unknown jargon unless you explain it. ( per exemple, 
+- Clear steps. No unknown jargon unless you explain it.
 
 **Links**
 
