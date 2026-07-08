@@ -47,7 +47,8 @@ It's a living project. New guides get added, existing ones get updated when thin
 | ☁️ | [**Github's AI & Cloud Dev**](./REPOS/REPO%2012%20-%20AICD/README.md) | The guide to work with Github's AI and cloud tools |
 | 🫙 | [**Github's Codespaces & Devcontainers**](./REPOS/REPO%2013%20-%20CDc/README.md) | The solution for projects to not work only locally |
 | 🤫 | [**Github secrets management**](./REPOS/REPO%2014%20-%20Secrets%20management/README.md) | How Github wants you to protect your .env |
-| 🤐 | [**Hidden Markdown**](./REPOS/REPO%2015%20-%20Hidden%20Markdown/README.md) | "Secret" Markdown configs. to make your README even better |
+| 🤐 | [**Github with Hidden Markdown**](./REPOS/REPO%2015%20-%20Hidden%20Markdown/README.md) | "Secret" Markdown configs. to make your README even better |
+| 👥 | [**Github's Orgs**](./REPOS1/README.md) | Everything there is to know about orgs, from the fundamentals to the most obscure details |
  
 </div>
  
