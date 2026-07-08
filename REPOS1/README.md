@@ -18,9 +18,9 @@ That's what this is for. Three guides, each one picking up where the last leaves
 
 |     | REPOS | WHAT IT COVERS |
 | --- | ----- | -------------- |
-| 🏗️ | [**Creating an Organization**](REPOS1/REPO%201%20-%20Creating%20an%20Organization/README.md) | Setting one up from zero, naming it right, picking a plan, and not messing up the first week |
-| 🧭 | [**Maintaining and Managing**](REPOS1/REPO%202%20-%20Maintaining%20and%20Managing/README.md) | Teams, roles, permissions, security defaults, billing, and keeping the thing healthy long term |
-| 📚 | [**Building Your Info Hub**](REPOS1/REPO%203%20-%20Building%20Your%20Info%20Hub/README.md) | Turning your org into a place people actually go to for information, profile READMEs, Discussions, wikis, pinned repos |
+| 🏗️ | [**Creating an Organization**](REPO%201%20-%20Creating%20an%20Organization) | Setting one up from zero, naming it right, picking a plan, and not messing up the first week |
+| 🧭 | [**Maintaining and Managing**](REPO%202%20-%20Maintaining%20and%20Managing) | Teams, roles, permissions, security defaults, billing, and keeping the thing healthy long term |
+| 📚 | [**Building Your Info Hub**](REPO%203%20-%20Building%20Your%20Info%20Hub) | Turning your org into a place people actually go to for information, profile READMEs, Discussions, wikis, pinned repos |
 
 > #### If there's a corner of this you think is missing, open an issue.
 
