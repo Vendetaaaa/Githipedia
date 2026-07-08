@@ -1,6 +1,6 @@
 <div align="center">
 
-![](https://capsule-render.vercel.app/api?type=blur&height=250&color=B91C1C&text=OrgVerse&section=header&fontColor=FCA5A5&fontAlign=34&desc=Everything%20about%20GitHub%20Organizations%2C%20in%20one%20place&descAlign=55&descSize=18)
+![](https://capsule-render.vercel.app/api?type=blur&height=250&color=B91C1C&text=OrgVerse&section=header&fontColor=FCA5A5&fontAlign=45&desc=Everything%20about%20GitHub%20Organizations%2C%20in%20one%20place&descAlign=62&descSize=18)
 
 [![Guides](https://img.shields.io/badge/3_Guides-B91C1C?style=for-the-badge&labelColor=1a1a1a)](#) [![More Coming](https://img.shields.io/badge/More_Coming_Soon-7F1D1D?style=for-the-badge&labelColor=1a1a1a)](#) [![Last Updated](https://img.shields.io/badge/Last%20Updated-2026-B91C1C?style=for-the-badge)](#)
 
@@ -18,9 +18,9 @@ That's what this is for. Three guides, each one picking up where the last leaves
 
 |     | REPOS | WHAT IT COVERS |
 | --- | ----- | -------------- |
-| 🏗️ | [**Creating an Organization**](REPOS/REPO%201a%20-%20Creating%20an%20Organization/README.md) | Setting one up from zero, naming it right, picking a plan, and not messing up the first week |
-| 🧭 | [**Maintaining and Managing**](REPOS/REPO%202a%20-%20Maintaining%20and%20Managing/README.md) | Teams, roles, permissions, security defaults, billing, and keeping the thing healthy long term |
-| 📚 | [**Building Your Info Hub**](REPOS/REPO%203a%20-%20Building%20Your%20Info%20Hub/README.md) | Turning your org into a place people actually go to for information, profile READMEs, Discussions, wikis, pinned repos |
+| 🏗️ | [**Creating an Organization**](REPOS1/REPO%201%20-%20Creating%20an%20Organization/README.md) | Setting one up from zero, naming it right, picking a plan, and not messing up the first week |
+| 🧭 | [**Maintaining and Managing**](REPOS1/REPO%202%20-%20Maintaining%20and%20Managing/README.md) | Teams, roles, permissions, security defaults, billing, and keeping the thing healthy long term |
+| 📚 | [**Building Your Info Hub**](REPOS1/REPO%203%20-%20Building%20Your%20Info%20Hub/README.md) | Turning your org into a place people actually go to for information, profile READMEs, Discussions, wikis, pinned repos |
 
 > #### If there's a corner of this you think is missing, open an issue.
 
