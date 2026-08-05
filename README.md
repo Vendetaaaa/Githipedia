@@ -51,6 +51,7 @@ It's a living project. New guides get added, existing ones get updated when thin
 | 🤐 | [**Github with Hidden Markdown**](./REPOS/REPO%2015%20-%20Hidden%20Markdown/README.md) | "Secret" Markdown configs. to make your README even better |
 | 👥 | [**Github's Orgs**](./REPOS1/README.md) | Everything there is to know about orgs, from the fundamentals to the most obscure details |
 | 🧑‍💻 | [**Git**](./REPOS/REPO%2016%20-%20Git%20commands/README.md) | Everything there is to know about Git commands, what is it and how does it work |
+| 🖇️ | [**100 Links**](./REPOS/REPO%2017%20-%20100%20Useful%20Links/README.md) | 100 links about Github, very helpful to build the foundation of Github |
 </div>
  
 ---
