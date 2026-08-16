@@ -6,7 +6,7 @@
 
 </br>
 
-![Documentations](https://img.shields.io/badge/16_Documents-7F1D1D?style=for-the-badge&labelColor=1a1a1a)
+![Documentations](https://img.shields.io/badge/18_Documents-7F1D1D?style=for-the-badge&labelColor=1a1a1a)
 ![Programs](https://img.shields.io/badge/8_Programs-7F1D1D?style=for-the-badge&labelColor=1a1a1a)
 ![Last Updated](https://img.shields.io/badge/Last%20Updated-2026-7F1D1D?style=for-the-badge&labelColor=1a1a1a)
 ![License](https://img.shields.io/badge/License-MIT-7F1D1D?style=for-the-badge&labelColor=1a1a1a)
