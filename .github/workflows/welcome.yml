@@ -1,0 +1,27 @@
+name: Welcome First-Time Contributors
+
+on:
+  issues:
+    types: [opened]
+  pull_request_target:
+    types: [opened]
+
+permissions:
+  issues: write
+  pull-requests: write
+
+jobs:
+  welcome:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/first-interaction@v1
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          issue-message: |
+            Thanks for opening your first issue in Githipedia! 🎉
+
+            Someone will take a look soon. In the meantime, if this is a correction or an outdated step, a direct link to the exact section really speeds things up.
+          pr-message: |
+            Thanks for your first PR to Githipedia! 🎉
+
+            A maintainer will review this soon. Quick reminder from [CONTRIBUTING.md](https://github.com/${{ github.repository }}/blob/main/CONTRIBUTING.md): if this adds a brand new guide, make sure it follows the formatting conventions (banners, table of contents, red theme) so it fits in with the rest.
