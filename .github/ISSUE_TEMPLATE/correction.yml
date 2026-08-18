@@ -1,0 +1,57 @@
+name: 🩹 Correction or outdated content
+description: Something in a guide is wrong, unclear, or no longer matches how GitHub actually works.
+title: "[Correction]: "
+labels: ["correction"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping keep Githipedia accurate. GitHub changes constantly, so this kind of report is genuinely valuable.
+
+  - type: dropdown
+    id: location
+    attributes:
+      label: Which guide is this in?
+      description: Pick the folder under /REPOS or /REPOS1 that contains the issue.
+      options:
+        - REPOS
+        - REPOS1 - Orgs
+        - Root README
+        - A program in /PROGRAMS
+        - Something else
+    validations:
+      required: true
+
+  - type: input
+    id: section
+    attributes:
+      label: Section or line
+      description: Which heading, step, or line is affected? A link straight to it (use the "..." → "Copy permalink" button on GitHub) is ideal.
+      placeholder: "e.g. '## Setting Up a Personal Access Token', or a permalink"
+    validations:
+      required: true
+
+  - type: textarea
+    id: whats-wrong
+    attributes:
+      label: What's wrong?
+      description: Explain what the guide currently says and why it's incorrect, outdated, or unclear.
+      placeholder: "The guide says X, but GitHub now does Y instead..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: correct-info
+    attributes:
+      label: What should it say instead?
+      description: If you know the correct information, share it here. Links to official docs are welcome. Leave blank if you're not sure — just flagging it still helps.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I checked that this hasn't already been reported in an open issue.
+          required: true
