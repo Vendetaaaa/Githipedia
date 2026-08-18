@@ -1,0 +1,31 @@
+# === Python (PROGRAMS/LYU, PROGRAMS/Github Dashboard) ===
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+*.egg
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.log
+
+# === Rust (PROGRAMS/GRS/git-rescope) ===
+target/
+Cargo.lock  # remove this line if git-rescope is a published binary/app, not a library
+
+# === Secrets / env files ===
+.env
+.env.*
+*.pem
+*.key
+
+# === Editor / OS junk ===
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
