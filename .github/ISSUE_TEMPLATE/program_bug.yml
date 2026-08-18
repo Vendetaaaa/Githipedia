@@ -1,0 +1,44 @@
+name: ⚙️ Program bug or suggestion
+description: Something in /PROGRAMS (git-rescope, LYU, the terminal dashboard, etc.) is broken or could be better.
+title: "[Program]: "
+labels: ["program"]
+body:
+  - type: dropdown
+    id: program
+    attributes:
+      label: Which program?
+      options:
+        - Github Dashboard
+        - GRS (git-rescope)
+        - LYU (License Year Updater)
+        - Github Issue Labeler (external repo)
+        - Github README generator (external repo)
+        - Github Health Check (external repo)
+        - Github Triage Issue Bot (external repo)
+        - Github Local Web Server / GitTunnel (external repo)
+    validations:
+      required: true
+
+  - type: textarea
+    id: whats-happening
+    attributes:
+      label: What happened?
+      description: Steps to reproduce, the command you ran, and what you expected vs. what actually happened.
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      placeholder: "OS, Python/Node version, program version if relevant"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: This is not a security vulnerability (those go through the Security tab, not an issue).
+          required: true
