@@ -1,0 +1,56 @@
+name: 📖 New guide proposal
+description: Suggest a GitHub topic that isn't covered yet, or claim one you want to write yourself.
+title: "[New Guide]: "
+labels: ["new-guide"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Per CONTRIBUTING.md: open an issue before writing a new REPO folder, so two people don't end up writing the same guide.
+
+  - type: input
+    id: topic
+    attributes:
+      label: Proposed topic
+      placeholder: "e.g. GitHub Packages, Sponsors, Copilot Workspace..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: What would it cover?
+      description: A rough outline of what the guide would explain, at the level of the table of contents.
+      placeholder: |
+        - What it is and when you'd use it
+        - Setup steps
+        - Common pitfalls
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Why does this deserve its own guide?
+      description: What's currently missing, scattered, or poorly explained elsewhere that this would fix?
+    validations:
+      required: true
+
+  - type: dropdown
+    id: writing-it
+    attributes:
+      label: Are you planning to write this yourself?
+      options:
+        - "Yes, I'd like to write it"
+        - "No, just suggesting the topic"
+        - "Maybe, depends on interest"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I checked the README's guide table and this isn't already covered.
+          required: true
