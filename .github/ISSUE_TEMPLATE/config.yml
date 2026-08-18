@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 📚 Browse existing guides first
+    url: https://github.com/Vendetaaaa/Githipedia#the-documentations
+    about: Your topic might already be covered. Check the table in the README before opening an issue.
+  - name: 🔒 Report a security concern
+    url: https://github.com/Vendetaaaa/Githipedia/security
+    about: Please do not open a public issue for security concerns. Use the Security tab instead.
