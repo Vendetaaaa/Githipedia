@@ -16,7 +16,7 @@ env/
 
 # === Rust (PROGRAMS/GRS/git-rescope) ===
 target/
-Cargo.lock  # remove this line if git-rescope is a published binary/app, not a library
+Cargo.lock  # remove this line if git-rescope is a published binary/app, not a library > comment of an idiot
 
 # === Secrets / env files ===
 .env
