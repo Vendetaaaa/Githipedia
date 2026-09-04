@@ -43,7 +43,7 @@ Every organization can have a special README that shows up right on its main pag
 
 **3.** Inside that folder, add a `README.md` file.
 
-```
+```text
 .github/
   profile/
     README.md   ← this is what shows on your org's homepage
@@ -59,7 +59,7 @@ Every organization can have a special README that shows up right on its main pag
 
 That same `.github` repo does more than hold your profile page. Anything you put at its root acts as an org-wide default that applies to every other repo that doesn't have its own version of the same file:
 
-```
+```text
 .github/
   profile/README.md          → your org's homepage
   CONTRIBUTING.md            → default contributing guide for all repos
@@ -123,7 +123,7 @@ Covered briefly above, but worth its own callout since it's easy to underuse. Te
 
 A good starting set for most orgs:
 
-```
+```text
 .github/ISSUE_TEMPLATE/
   bug_report.md
   feature_request.md

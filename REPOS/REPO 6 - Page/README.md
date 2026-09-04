@@ -50,7 +50,7 @@ No server. No hosting bill. No deployment pipeline to configure. Just a repo and
 
 One special site tied to your GitHub account. It lives at `https://username.github.io` and is built from a repo named **exactly** `username.github.io`.
 
-```
+```text
 Repo name  →  username.github.io   (must match exactly)
 URL        →  https://username.github.io
 Branch     →  main  (default)
@@ -65,7 +65,7 @@ This is your **personal homepage** - portfolio, bio, dev blog, or landing page. 
 
 Every public repository can have its own Pages site - unlimited. They sit under a `/project-name` path on your user domain.
 
-```
+```text
 Repo name  →  any-project-name
 URL        →  https://username.github.io/any-project-name
 Branch     →  main, docs/, or gh-pages  (your choice)
@@ -80,7 +80,7 @@ Project sites are ideal for: documentation, demo pages, changelogs, and landing 
 
 Any Pages site - user or project - can be served from a domain you own instead of the default `github.io` URL.
 
-```
+```text
 Default  →  https://username.github.io
 Custom   →  https://yourname.dev  (or any domain you own)
 ```
@@ -91,7 +91,7 @@ Both URLs remain active after the switch. GitHub handles the routing. See the [C
 
 ## Enabling GitHub Pages
 
-```
+```text
 Repository → Settings → Pages (left sidebar)
 
 Source:
@@ -150,7 +150,7 @@ Jekyll transforms Markdown and Liquid templates into a full HTML site. GitHub Pa
 
 ### What Jekyll Does
 
-```
+```text
 Your files                Jekyll output
 ─────────────────         ─────────────────────────
 index.md          →       index.html
@@ -199,14 +199,14 @@ Without front matter, Jekyll treats the file as a plain page with the default la
 
 Jekyll is optional. You can use any static site generator - Vite, Next.js (static export), Astro, Hugo - and deploy the built output to Pages.
 
-```
+```text
 Framework workflow:
   code (src/) → build → output (dist/ or out/) → deploy to Pages
 ```
 
 The key: your Pages source must point to the **built output folder**, not your source files.
 
-```
+```text
 # For Vite / most frameworks
 Source branch: gh-pages
 Or: GitHub Actions deploying dist/ to gh-pages
@@ -252,7 +252,7 @@ jobs:
 
 **Step 1** - Add a CNAME record at your DNS provider:
 
-```
+```text
 Type   Host          Value
 ─────────────────────────────────────
 CNAME  www           username.github.io
@@ -260,7 +260,7 @@ CNAME  www           username.github.io
 
 For an apex domain (no `www`), add four A records instead:
 
-```
+```text
 Type   Host   Value
 ────────────────────────────
 A      @      185.199.108.153
@@ -275,7 +275,7 @@ A      @      185.199.111.153
 
 ### Enforcing HTTPS
 
-```
+```text
 Settings → Pages → Enforce HTTPS
 ```
 
@@ -287,7 +287,7 @@ GitHub provisions a free TLS certificate via Let's Encrypt automatically. The "E
 
 When you set a custom domain in Settings, GitHub automatically creates a file called `CNAME` in your repo root containing your domain name.
 
-```
+```text
 # CNAME file content (single line, no extras)
 yoursite.dev
 ```

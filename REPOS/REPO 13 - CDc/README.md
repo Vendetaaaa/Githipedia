@@ -54,7 +54,7 @@ Before touching any config file, lets get the basic words straight. Everything b
 
 **Codespaces** is a cloud computer that GitHub spins up for you, with VS Code already running inside your browser or desktop app. You do not install anything locally. You click a button on a repo, and a few seconds or minutes later you have a terminal, a file editor, and a running project, all inside that cloud machine.
 
-```
+```text
 Normal way:
   clone repo -> install Node -> install the right version ->
   install dependencies -> set env vars -> hope it works
@@ -69,7 +69,7 @@ Think of it as borrowing a fully built laptop for a few hours, instead of buildi
 
 A **devcontainer** is the recipe for that cloud computer. It is a folder named `.devcontainer` sitting in your repo, holding a file called `devcontainer.json`. That file lists which programming languages to install, which VS Code extensions to add, which ports to open, and which commands to run after setup.
 
-```
+```text
 your-project/
 ├── .devcontainer/
 │   └── devcontainer.json   <- the recipe
@@ -82,7 +82,7 @@ Without this file, Codespaces still works, but it guesses a generic setup. With 
 
 ### How They Work Together
 
-```
+```text
 You write devcontainer.json once
         |
         v
@@ -138,7 +138,7 @@ Save that as `.devcontainer/devcontainer.json`, push it, and Codespaces already 
 
 The base image is the operating system plus the language runtime that your container starts from. Microsoft maintains a large catalog of ready made ones, so you almost never need to build your own from scratch.
 
-```
+```text
 mcr.microsoft.com/devcontainers/javascript-node:20   -> Node.js 20
 mcr.microsoft.com/devcontainers/python:3.12           -> Python 3.12
 mcr.microsoft.com/devcontainers/go:1.22                -> Go 1.22
@@ -199,7 +199,7 @@ If your project runs a web server, Codespaces needs to know which port to expose
 
 These are shell commands that run automatically at specific moments while the container is being built or started. They remove the need for a setup guide entirely.
 
-```
+```text
 onCreateCommand     -> runs once, when the container is first created
 updateContentCommand -> runs when the container is created or rebuilt
 postCreateCommand   -> runs once, right after the container is fully created
@@ -254,7 +254,7 @@ Some projects need an API key or a database URL to actually run. Never put real 
 
 For anything sensitive, like API keys, use **Codespaces secrets** instead, set under your repository or organization settings on GitHub. Those get injected into the container at runtime, and never touch your committed files.
 
-```
+```text
 Repo settings -> Secrets and variables -> Codespaces -> New repository secret
 ```
 
@@ -310,7 +310,7 @@ This one installs every Python dependency and runs your database migrations auto
 
 For projects needing more than one container, like an app plus a Postgres database, `dockerComposeFile` is the right tool.
 
-```
+```text
 .devcontainer/
 ├── devcontainer.json
 └── docker-compose.yml
@@ -355,7 +355,7 @@ The `app` service is your actual coding environment. The `db` service runs along
 
 Drop this badge into your README so contributors see a literal one click button to launch a codespace, instead of having to dig through the green "Code" button menu themselves.
 
-```
+```json
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/YOUR-USERNAME/YOUR-REPO)
 ```
 
@@ -365,7 +365,7 @@ Replace `YOUR-USERNAME/YOUR-REPO` with your actual repository path. The result l
 
 You can also point the badge at a specific branch, or pass extra parameters, by appending them after a question mark:
 
-```
+```text
 https://codespaces.new/YOUR-USERNAME/YOUR-REPO?quickstart=1
 ```
 
@@ -377,7 +377,7 @@ https://codespaces.new/YOUR-USERNAME/YOUR-REPO?quickstart=1
 
 Never assume your `devcontainer.json` works just because it looks correct. Always test the actual experience yourself first.
 
-```
+```text
 Step 1 -> Push your .devcontainer folder to your repo
 Step 2 -> Open the repo on github.com
 Step 3 -> Click the green "Code" button
@@ -410,7 +410,7 @@ If you have VS Code installed locally, you can also test it without ever touchin
 
 Do this in one sitting, right after reading this guide.
 
-```
+```text
 THE BASICS  (do these first, they matter most)
 ──────────────────────────────────────────────────────────
 [ ]  Create a folder named exactly .devcontainer in your repo root

@@ -8,7 +8,6 @@ on:
     paths:
       - "**/*.md"
   schedule:
-    # Every Monday at 09:00 UTC — catches links that rotted after merge, not just at PR time.
     - cron: "0 9 * * 1"
   workflow_dispatch:
 
@@ -25,7 +24,7 @@ jobs:
           args: >
             --verbose
             --no-progress
-            --exclude-mail
+            --method GET
             --accept 200,201,202,203,204,301,302,303,307,308,403,429
             "**/*.md"
           fail: true

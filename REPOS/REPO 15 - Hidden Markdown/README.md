@@ -41,7 +41,7 @@ That's the thread connecting everything below.
 
 Everyone eventually finds [github-readme-stats](https://github.com/anuraghazra/github-readme-stats). Fewer people find its query parameters, which is where the actual customization lives.
 
-```
+```text
 <!-- The default everyone copies -->
 ![Stats](https://github-readme-stats.vercel.app/api?username=YOUR-USERNAME&show_icons=true)
 
@@ -80,7 +80,7 @@ Both tricks below work the same way under the hood: a **GitHub Action runs on a 
 
 Drop these two comment markers anywhere in your `README.md`:
 
-```
+```text
 <!-- BLOG-POST-LIST:START -->
 <!-- BLOG-POST-LIST:END -->
 ```
@@ -109,7 +109,7 @@ Every six hours, the action fetches your RSS feed, formats the newest entries as
 
 This one needs a small piece of middleware since Spotify's API requires OAuth, but the setup is a one-time cost:
 
-```
+```text
 <div align="center">
   <img src="https://spotify-github-profile.vercel.app/api/view?uid=YOUR-SPOTIFY-ID&cover_image=true&theme=default&show_offline=false&background_color=121212" />
 </div>
@@ -141,7 +141,7 @@ Markdown files render as HTML, which means any raw HTML tag GitHub doesn't expli
 
 Rendered, this collapses into a single clickable line until someone chooses to expand it. Three places this earns its keep:
 
-```
+```text
 ✅  Long badge lists   → keeps the top of the README scannable
 ✅  Detailed "about me" tangents → optional reading, not forced reading
 ✅  A changelog or "past projects" archive → history without clutter
@@ -167,7 +167,7 @@ The [Profile README Generator](https://rahuldkjain.github.io/gh-profile-readme-g
 
 **Where it falls apart:** used as a final product instead of a starting point, it produces a README that looks like thousands of other README's, because everyone is pulling from the exact same generator defaults.
 
-```
+```text
 RIGHT WAY TO USE IT
 1. Generate a base README with the tool
 2. Strip out every section that doesn't apply to you

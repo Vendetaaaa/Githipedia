@@ -1,6 +1,6 @@
 <div align="center">
 
-```
+```text
  ██████╗ ██████╗ ███████╗
 ██╔════╝ ██╔══██╗██╔════╝
 ██║  ███╗██████╔╝███████╗
@@ -28,7 +28,7 @@ Switch tasks without losing your place. Restore everything exactly as you left i
 
 You're deep into fixing a bug, 8 files open, half-written code everywhere, sweat dripping (such a nightmare tbh) and suddenly you get pulled onto something urgent (ofc you do). `grs` lets you freeze that exact moment and come back to it later, perfectly intact.
 
-```
+```text
 grs save "fixing prod auth bug"    ← one command, everything frozen
 ... go handle the emergency ...
 grs restore 17ca9f9a               ← back exactly where you left it
@@ -70,7 +70,7 @@ grs ui
 
 ## How It Works
 
-```
+```text
 grs save
   1. Capture  — stashes your code via libgit2 (no git subprocess)
   2. Store    — saves branch, files, timestamp to local JSON
@@ -89,7 +89,7 @@ grs restore
 
 Everything lives on your machine only. Nothing is ever sent anywhere.
 
-```
+```text
 %APPDATA%\git-rescope\             (Windows)
 ~/.config/git-rescope/             (Linux/macOS)
   ├── storage.json                 ← snapshot metadata

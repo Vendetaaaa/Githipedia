@@ -110,7 +110,7 @@ The `env:` block makes each secret available as a normal environment variable fo
 
 There are a few things worth knowing upfront:
 
-```
+```text
 You cannot read a secret value back once it's saved.
 If you lose it, you have to replace it with a new one.
 
@@ -246,7 +246,7 @@ By default, repo admins can bypass protection rules. Checking this option makes 
 
 This prevents anyone from rewriting the history of `main` with a force push. You almost never want this on your main branch.
 
-```
+```text
 Result of turning these on:
 Someone wants to change main
         ↓
@@ -319,7 +319,7 @@ jobs:
 
 When this workflow runs, it will complete the `test` job and then pause. GitHub will notify the required reviewers. Only after someone approves does the `deploy` job continue.
 
-```
+```text
 Push to main
       ↓
 Tests run automatically

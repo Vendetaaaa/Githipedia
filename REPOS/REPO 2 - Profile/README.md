@@ -39,7 +39,7 @@
 
 Most GitHub profiles look like this:
 
-```
+```text
 username: xX_coder_Xx
 bio: (empty)
 pinned repos: "test", "test2", "homework-2024", a fork they never touched
@@ -62,7 +62,7 @@ A README is a file called `README.md` that GitHub automatically renders for anyo
 
 No README means no context. A repo without one is basically a locked room. People look at the file names and leave.
 
-```
+```text
 my-project/
 ├── src/
 ├── tests/
@@ -74,7 +74,7 @@ my-project/
 
 Markdown is the formatting language you use to write READMEs. Plain symbols become formatted output when GitHub renders them.
 
-```
+```text
 # Big Heading        →  large bold title
 **bold**             →  bold text
 *italic*             →  italic text
@@ -90,7 +90,7 @@ That covers most of what you'll actually use. The rest you can look up as you go
 
 Create a repository with **your exact username** as the repo name, and GitHub treats its README as your profile page content. This is a real feature, not a hack.
 
-```
+```text
 → github.com/new
 → Name it exactly your username (e.g. "janedoe")
 → ✓ Initialize with README
@@ -104,7 +104,7 @@ This is the single most important thing in this guide. Everything else builds on
 
 Before you worry about design, understand what people actually look at and in what order:
 
-```
+```text
 0-2s   →  photo + name + bio        "who is this?"
 2-5s   →  pinned repos              "what have they built?"
 5-8s   →  contribution graph        "are they active?"
@@ -148,7 +148,7 @@ The first thing anyone sees. It sets the tone before they've read a single word.
 
 **Display name vs username:** Your username lives in every URL and is a pain to change. Your display name is flexible, so use it to show your real name so people can actually find and remember you.
 
-```
+```text
 Settings → Public profile → Name → Save
 ```
 
@@ -162,13 +162,13 @@ If your username is `xX_coder_Xx`, your display name should still say "Jane Doe.
 
 **The formula:**
 
-```
+```json
 [what you do] + [what you're focused on] + [one hook]
 ```
 
 **Examples:**
 
-```
+```text
 ✅ "Backend dev building Go microservices · ex-@Stripe · shipping a
     side project in public"
 
@@ -184,7 +184,7 @@ If your username is `xX_coder_Xx`, your display name should still say "Jane Doe.
 
 Also fill out the sidebar fields. They take two minutes and a lot of people just skip them:
 
-```
+```text
 🏢  Company    →  "@Freelance" or "@YourCompany" or "Open to work"
 📍  Location   →  helps you appear in local developer searches
 🔗  Website    →  portfolio, blog, or a project you're proud of
@@ -197,13 +197,13 @@ Also fill out the sidebar fields. They take two minutes and a lot of people just
 
 Your portfolio window. Six slots. Usually the first thing visitors actually click.
 
-```
+```text
 Profile page → "Customize your pins" (just below your bio) → select up to 6 → Save
 ```
 
 **What to pin:**
 
-```
+```text
 ✅ DEFINITELY PIN
    → your most complete, polished project (has a README, ideally a demo)
    → your primary-skill showcase
@@ -222,7 +222,7 @@ Profile page → "Customize your pins" (just below your bio) → select up to 6 
 
 Each card shows name, description, language, stars, and forks. The description is the most-read text on the card. Treat it like a one-line pitch.
 
-```
+```text
 Repository Settings → Edit repository details
 
 ✅  Description:  "CLI tool to batch-rename files using regex patterns"
@@ -533,7 +533,7 @@ You're not just showing work here. You're showing how you think. That's what att
 
 Do this in one sitting.
 
-```
+```text
 HOUR 1 - the foundation (do these first, they matter most)
 ──────────────────────────────────────────────────────────
 □  Upload a clear, consistent avatar
@@ -563,14 +563,14 @@ HOUR 2 - the polish
 
 MIT - fork it, adapt it, translate it, share it freely.
 
-```
+```text
 Your code outlives your job title.
 Your profile outlives your resume.
 Build both like they matter.
 ```
 
 <div align="center">
-  
+
 [![](https://capsule-render.vercel.app/api?type=waving&color=7F1D1D&height=160&section=footer&text=Ship.+Polish.+Repeat.&fontSize=28&fontColor=FCA5A5&fontAlignY=65)](https://github.com/Vendetaaaa/Githipedia)
 
 </div>

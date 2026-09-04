@@ -70,7 +70,7 @@ Chat is where Copilot stops being autocomplete and starts being a tool you can a
 
 **Slash commands** give Chat a specific job instead of a vague request:
 
-```
+```text
 /explain     - explain the selected code
 /fix         - propose a fix for a problem
 /tests       - generate unit tests for the selection
@@ -80,7 +80,7 @@ Chat is where Copilot stops being autocomplete and starts being a tool you can a
 
 **Chat participants** point a question at a specific part of your setup:
 
-```
+```text
 @workspace   - ask about your whole project, not just the open file
 @github      - search and ask about things in your GitHub repos
 @terminal    - ask about the contents of your terminal
@@ -89,7 +89,7 @@ Chat is where Copilot stops being autocomplete and starts being a tool you can a
 
 **Variables** let you hand Chat exact context instead of making it guess:
 
-```
+```text
 #file        - reference a specific file
 #selection   - reference whatever you have highlighted
 #editor      - reference the currently open file
@@ -107,7 +107,7 @@ The quality of what you get out of Copilot depends heavily on how you ask. A few
 
 **Give it the shape of the answer.** If you want a specific return type, error handling style, or pattern, say so:
 
-```
+```text
 Write a function getUser(id) that:
 - returns a Promise
 - throws a NotFoundError if no user matches
@@ -173,7 +173,7 @@ The fastest way to try it:
 
 **4.** Click **Create codespace on main**.
 
-```
+```text
 Code button → Codespaces tab → Create codespace on main
 ```
 
@@ -181,7 +181,7 @@ Within a minute or two, you'll have a full VS Code environment open in your brow
 
 You can also create one from the command line if you have the GitHub CLI installed:
 
-```
+```bash
 gh codespace create --repo owner/repo
 ```
 
@@ -191,7 +191,7 @@ gh codespace create --repo owner/repo
 
 The `devcontainer.json` file is the configuration that tells GitHub (and your editor) exactly what your environment should look like. It lives in a `.devcontainer` folder at the root of your repo:
 
-```
+```text
 my-project/
 ├── .devcontainer/
 │   └── devcontainer.json
@@ -215,7 +215,7 @@ The most commonly used fields:
 
 Here's a realistic setup for a Node.js project that also needs PostgreSQL:
 
-```
+```json
 {
   "name": "Node and Postgres Dev Environment",
   "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
@@ -266,7 +266,7 @@ This matters most for:
 
 **5.** Choose a trigger: on every push, on a schedule, or both. On every push keeps things freshest, but a schedule (for example, once a day) is usually enough and uses far less build time.
 
-```
+```text
 Settings → Codespaces → Set up prebuild → choose branch, region, and trigger
 ```
 

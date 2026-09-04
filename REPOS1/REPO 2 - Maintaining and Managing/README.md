@@ -52,7 +52,7 @@ Managing permissions repo by repo, person by person, works fine for three people
 
 A reasonable starting structure for most orgs looks like this:
 
-```
+```text
 YOUR-ORG
 ├── core            → full write access to everything, small trusted group
 ├── engineering      → write access to code repos
@@ -70,7 +70,7 @@ YOUR-ORG
 
 Teams can be nested inside parent teams. A parent team automatically includes everyone from its child teams, and any repo access given to the parent applies to everyone underneath it too.
 
-```
+```text
 engineering (parent)
   ├── backend (child)
   └── frontend (child)
