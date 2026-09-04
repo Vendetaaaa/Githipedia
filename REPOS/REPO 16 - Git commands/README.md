@@ -59,7 +59,7 @@ Git exists because of a licensing dispute. Up until 2005, the Linux kernel proje
 
 So he built one himself.
 
-```
+```text
 April 2005    → Torvalds starts writing Git
 Days later    → Git manages its own source code
 June 2005     → The Linux kernel 2.6.12 release is the first shipped with Git
@@ -81,7 +81,7 @@ A handful of ideas show up in nearly every command below. Get these straight fir
 
 A repository, or "repo," is a project folder plus its entire recorded history. That history lives in a hidden `.git` folder sitting right next to your files.
 
-```
+```text
 my-project/
 ├── .git/          ← the actual repository: history, config, everything
 ├── index.html
@@ -96,7 +96,7 @@ Delete `.git` and the folder stops being a repository. Your files stay, but ever
 
 Git splits saving a change into two steps instead of one. You **stage** the changes you want to include, then you **commit** the staged snapshot. This middle step is what lets you build one clean commit out of five files you edited, while leaving a sixth file's changes for later.
 
-```
+```text
 Working Directory  →  git add  →  Staging Area  →  git commit  →  Repository History
 
 ```
@@ -115,7 +115,7 @@ HEAD is a pointer to whatever commit you currently have checked out. Almost alwa
 
 ## Installing Git
 
-```
+```text
 # Windows: download the installer
 https://git-scm.com/download/win
 
@@ -134,7 +134,7 @@ git --version
 
 First thing to do on any new machine, before anything else:
 
-```
+```bash
 git config --global user.name "Your Name"
 git config --global user.email "you@example.com"
 ```
@@ -168,7 +168,7 @@ Every commit you make gets stamped with these two values. Get them wrong and eve
 | `git clone <url> <folder>` | Same, but places it in a folder with a custom name |
 | `git clone --depth 1 <url>` | Downloads only the latest commit, skipping the full history |
 
-```
+```bash
 git init
 # or
 git clone https://github.com/user/repo.git
@@ -192,7 +192,7 @@ cd repo
 | `git diff` | Shows unstaged changes, line by line |
 | `git diff --staged` | Shows what's staged and about to be committed |
 
-```
+```bash
 git status
 git add index.html style.css
 git diff --staged
@@ -215,7 +215,7 @@ git commit -m "Add responsive navbar"
 | `git switch -c <name>` | Creates a branch and switches to it in one step |
 | `git checkout -b <name>` | Older syntax for the same thing as `switch -c` |
 
-```
+```bash
 git switch -c feature/dark-mode
 # work happens here...
 git add .
@@ -237,14 +237,14 @@ git switch main
 | `git merge --abort` | Backs out of a merge that hit conflicts |
 | `git rebase --abort` | Backs out of a rebase that hit conflicts |
 
-```
+```bash
 git switch main
 git pull
 git switch feature/dark-mode
 git rebase main
 ```
 
-```
+```text
 Merge:    keeps both histories, adds a merge commit joining them
 Rebase:   rewrites your commits as if they started from main's latest tip
 
@@ -267,7 +267,7 @@ Rebase:   rewrites your commits as if they started from main's latest tip
 | `git push -u origin <branch>` | Pushes and links your local branch to the remote one, so future `git push` needs no arguments |
 | `git push --force-with-lease` | Force pushes, but refuses if someone else pushed first |
 
-```
+```bash
 git remote add origin https://github.com/you/project.git
 git push -u origin main
 ```
@@ -287,11 +287,11 @@ git push -u origin main
 | `git blame <file>` | Shows who last touched each line, and in which commit |
 | `git diff <hash1> <hash2>` | Shows what changed between two commits |
 
-```
+```bash
 git log --oneline --graph --all
 ```
 
-```
+```text
 * a3f9c2e (HEAD -> main) Add dark mode toggle
 * 1b8e4d1 Fix navbar spacing on mobile
 | * 7c2a9f0 (feature/search) Add search bar
@@ -316,7 +316,7 @@ git log --oneline --graph --all
 | `git reset --hard HEAD~1` | Undoes the last commit and deletes the changes entirely |
 | `git revert <hash>` | Creates a new commit that undoes a specific old commit |
 
-```
+```text
 Working Dir  ←──── reset --mixed (default)
 Staged       ←──── reset --soft
 History      ←──── reset --hard deletes it here too
@@ -337,7 +337,7 @@ History      ←──── reset --hard deletes it here too
 | `git stash apply` | Reapplies the most recent stash but keeps it in the list |
 | `git stash drop` | Deletes a stash without applying it |
 
-```
+```bash
 git stash
 git switch main
 git pull
@@ -382,13 +382,13 @@ git stash pop
 
 Typo in the message, and you haven't pushed yet.
 
-```
+```bash
 git commit --amend -m "Fix navbar spacing on mobile"
 ```
 
 Forgot a file entirely.
 
-```
+```bash
 git add forgotten-file.js
 git commit --amend --no-edit
 ```
@@ -397,7 +397,7 @@ git commit --amend --no-edit
 
 ### Resolving a merge conflict
 
-```
+```bash
 git switch main
 git pull
 git switch feature/dark-mode
@@ -406,7 +406,7 @@ git merge main
 
 Git stops and marks the conflicting sections directly in the file:
 
-```
+```text
 <<<<<<< HEAD
 background-color: #1a1a1a;
 =======
@@ -416,7 +416,7 @@ background-color: #121212;
 
 Pick the version you want, or write a new one that combines both, then delete the `<<<<<<<`, `=======`, and `>>>>>>>` markers by hand. Once every conflict in the file is resolved:
 
-```
+```bash
 git add style.css
 git commit
 ```
@@ -427,13 +427,13 @@ Git already knows this is a merge commit and pre-fills the message. You can acce
 
 Five commits like "wip", "fix typo", "actually fix it" don't need to survive into the project's permanent history.
 
-```
+```bash
 git rebase -i HEAD~5
 ```
 
 Your editor opens with something like this:
 
-```
+```text
 pick a1b2c3d Add search bar
 pick d4e5f6a wip
 pick b7c8d9e fix typo
@@ -447,7 +447,7 @@ Change every line except the first from `pick` to `squash` (or `s`), save, and G
 
 Mid-feature, and an urgent bug needs a fix on `main` right now.
 
-```
+```bash
 git stash push -m "half-done dark mode toggle"
 git switch main
 # fix the bug, commit, push
@@ -461,7 +461,7 @@ Everything comes back exactly where you left it.
 
 Something that worked a month ago is broken now, and forty commits happened in between.
 
-```
+```bash
 git bisect start
 git bisect bad                # current commit is broken
 git bisect good v1.2.0        # this old tag was known to work
@@ -469,14 +469,14 @@ git bisect good v1.2.0        # this old tag was known to work
 
 Git checks out a commit halfway between the two. Test it, then tell Git what you found.
 
-```
+```bash
 git bisect good   # or
 git bisect bad
 ```
 
 Repeat. Git keeps narrowing the range in half until it lands on the exact commit that introduced the bug.
 
-```
+```bash
 git bisect reset  # when you're done, returns you to where you started
 ```
 

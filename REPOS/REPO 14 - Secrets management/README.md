@@ -1,5 +1,5 @@
 <div align="center">
-  
+
 [![](https://capsule-render.vercel.app/api?type=blur&height=250&color=B91C1C&text=Secrets%20and%20Environments&section=header&fontColor=FCA5A5&fontAlignY=34&desc=Protect%20your%20deploys.%20Lock%20down%20your%20secrets.&fontSize=18)](https://capsule-render.vercel.app/api?type=blur&height=250&color=B91C1C&text=Secrets%20%26%20Environments&section=header&fontColor=FCA5A5&fontAlignY=34&desc=Protect%20your%20deploys.%20Lock%20down%20your%20secrets.&fontSize=18)
 
 [![CLI Friendly](https://img.shields.io/badge/CLI_Friendly-7F1D1D?style=for-the-badge&labelColor=1a1a1a)](https://img.shields.io/badge/CLI_Friendly-7F1D1D?style=for-the-badge&labelColor=1a1a1a) [![Last Updated](https://img.shields.io/badge/Last%20Updated-2026-991B1B?style=for-the-badge&labelColor=1a1a1a)](https://img.shields.io/badge/Last%20Updated-2026-991B1B?style=for-the-badge&labelColor=1a1a1a)
@@ -11,6 +11,7 @@
 ---
 
 ## Table of Contents
+
 - [What Is This?](#what-is-this)
 - [Core Concepts You Need First](#core-concepts-you-need-first)
   * [What is an Environment?](#-what-is-an-environment)
@@ -53,7 +54,7 @@ A few definitions before the good stuff - these get referenced constantly below.
 
 An **environment** is a named deployment target inside a repository - things like `staging`, `production`, or `preview`. It's not a server or a URL by itself; it's a GitHub-side concept that a workflow job can *reference*, and which can carry its own rules and secrets.
 
-```
+```yaml
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -68,7 +69,7 @@ The moment a job references `environment: production`, GitHub checks whatever pr
 
 Any job in a workflow that has an `environment:` key. That's it - that's the entire trigger condition for protection rules to apply.
 
-```
+```text
 Workflow triggers (push, PR, schedule...)
         ↓
 Job references "environment: production"
@@ -103,7 +104,7 @@ These are the guardrails you attach to an environment. There are three core ones
 
 This is the "manual approval" feature people usually mean when they say that phrase. You enable required reviewers and add 1 to 6 individuals or teams. When a job targeting that environment runs, it pauses and a designated reviewer gets a notification - via email, GitHub notifications, and mobile push - and clicks approve or reject.
 
-```
+```text
 Job hits "environment: production"
             ↓
    🔔 Reviewer notified
@@ -131,7 +132,7 @@ Restricts which branches or tags are even allowed to reference the environment. 
 
 In practice, most teams set a name pattern instead - `main`, `release/*` - so a random feature branch can't accidentally target production even if someone copy-pastes the wrong workflow file.
 
-```
+```yaml
 name: deploy
 on: push
 jobs:
@@ -165,7 +166,7 @@ jobs:
 
 When a teammate's workflow run is sitting there waiting on you:
 
-```
+```text
 1. Open the Actions tab → click the waiting workflow run
 2. You'll see a banner: "Review deployments"
 3. Click it, select the environment(s) to approve or reject
@@ -183,7 +184,7 @@ This is the part that trips up almost everyone the first time. There are **three
 
 ### The Three Levels
 
-```
+```text
 🏢 Organization secrets
         │   shared across many repos, access controlled by policy
         ▼
@@ -208,7 +209,7 @@ A repository secret is available to **every** workflow in that repo, no matter w
 
 If the same secret *name* exists at more than one level, GitHub doesn't merge them or throw an error - it just picks one, silently, based on specificity. If a secret with the same name exists at multiple levels, the secret at the lowest level takes precedence.
 
-```
+```text
         Organization secret: API_KEY = "org-value"
                     ↓ overridden by
          Repository secret: API_KEY = "repo-value"
@@ -240,14 +241,14 @@ Clicking "New secret" in the web UI twelve times is how you end up with a typo i
 
 First, make sure you're authenticated:
 
-```
+```bash
 gh auth login
 gh auth status
 ```
 
 ### 🔑 Setting a Single Secret
 
-```
+```text
 # Interactive prompt - paste the value, repository-scoped
 gh secret set API_KEY
 
@@ -273,7 +274,7 @@ gh secret set NPM_TOKEN --org my-org --repos repo1,repo2
 
 If you've got a `.env` full of values, you don't need to set them one by one. The cleanest built-in option is the `--env-file` flag:
 
-```
+```bash
 gh secret set --env-file .env.production --env production --repo your-org/your-repo
 ```
 
@@ -281,7 +282,7 @@ This reads every `KEY=VALUE` line and creates or updates a matching secret in on
 
 If your `gh` version doesn't support `--env-file` yet, a short loop does the same job:
 
-```
+```bash
 #!/bin/bash
 # sync-secrets.sh - push every line of .env as a repo secret
 
@@ -307,7 +308,7 @@ done < .env
 
 Since the three levels use the same subcommand with different flags, scripting a full sync across all of them is straightforward:
 
-```
+```text
 # Org-wide secret, shared by everything
 gh secret set NPM_TOKEN --org my-org --visibility all
 
@@ -323,7 +324,7 @@ gh secret set DATABASE_URL --env production --repo my-org/my-repo
 
 A slightly more complete version that handles all three environments from separate files, for a typical staging/production split:
 
-```
+```bash
 #!/bin/bash
 # sync-all-environments.sh
 set -euo pipefail
@@ -349,7 +350,7 @@ gh secret list --env production --repo "$REPO"
 
 To confirm anything actually landed where you expect:
 
-```
+```bash
 gh secret list                          # repository secrets
 gh secret list --env production         # one environment's secrets
 gh secret list --org my-org             # organization secrets
@@ -357,7 +358,7 @@ gh secret list --org my-org             # organization secrets
 
 To remove one:
 
-```
+```bash
 gh secret delete SECRET_NAME
 gh secret delete SECRET_NAME --env production
 gh secret delete SECRET_NAME --org my-org

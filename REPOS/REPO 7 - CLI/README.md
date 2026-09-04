@@ -1,5 +1,5 @@
 <div align="center">
-  
+
 <img src="https://capsule-render.vercel.app/api?type=blur&height=250&color=B91C1C&text=GitHub%20CLI&section=header&fontColor=FCA5A5&fontAlignY=34&desc=Everything%20you%20need%20to%20know%20about%20gh%20%E2%80%94%20the%20terminal%20that%20talks%20to%20GitHub.&descAlignY=55&descSize=18" width="100%" />
 
 </div>
@@ -44,7 +44,7 @@
 
 Most developers use GitHub like this:
 
-```
+```text
 Write code in terminal
       ↓
 Alt-Tab to browser
@@ -75,7 +75,7 @@ Before jumping into commands, four concepts will make everything else click imme
 
 A **CLI** (Command Line Interface) is a program you control entirely by typing commands into a terminal, rather than clicking through a graphical interface. Instead of navigating menus, you issue instructions directly.
 
-```
+```text
 GUI:  Find the repo button → click New → fill in the form → click Create
 CLI:  gh repo create my-project --public --clone
 ```
@@ -88,7 +88,7 @@ Both do exactly the same thing. The CLI version takes about 3 seconds once it's 
 
 It sits on top of GitHub's REST and GraphQL APIs and translates them into human-readable commands. Think of it as a remote control for your GitHub account that lives in your terminal.
 
-```
+```bash
 gh is to GitHub
 what git is to your local repo
 ```
@@ -100,8 +100,8 @@ The key distinction: `git` manages your code history. `gh` manages everything th
 This trips up almost everyone when they first encounter `gh`. They sound similar and live in the same terminal, but they do completely different things.
 
 <div align="center">
-  
-```
+
+```text
 ┌─────────────────────────────────────────────────────────────┐
 │  git                          │  gh                         │
 │  ─────────────────────────    │  ──────────────────────     │
@@ -130,12 +130,12 @@ Before `gh` can talk to GitHub on your behalf, it needs to prove you are who you
 ### 🪟 Windows
 
 **Option 1 - winget (recommended):**
-```
+```bash
 winget install --id GitHub.cli
 ```
 
 **Option 2 - Scoop:**
-```
+```bash
 scoop install gh
 ```
 
@@ -145,12 +145,12 @@ Download directly from [cli.github.com](https://cli.github.com) - no package man
 ### 🍎 macOS
 
 **Homebrew (recommended):**
-```
+```bash
 brew install gh
 ```
 
 **MacPorts:**
-```
+```bash
 sudo port install gh
 ```
 
@@ -177,7 +177,7 @@ sudo dnf install gh --repo gh-cli
 ```
 
 **Verify the installation worked:**
-```
+```bash
 gh --version
 # → gh version 2.x.x (yyyy-mm-dd)
 ```
@@ -188,13 +188,13 @@ gh --version
 
 Run this once after installation. You'll never need to think about it again.
 
-```
+```bash
 gh auth login
 ```
 
 You'll be guided through a short interactive flow:
 
-```
+```text
 ? Where do you use GitHub?
   ▸ GitHub.com
     GitHub Enterprise Server
@@ -213,13 +213,13 @@ You'll be guided through a short interactive flow:
 Select **Login with a web browser** - `gh` opens your browser, you approve, done. The token is stored securely in your system's credential store.
 
 **Verify it worked:**
-```
+```bash
 gh auth status
 # → ✓ Logged in to github.com as YOUR-USERNAME
 ```
 
 **Switching between accounts:**
-```
+```bash
 gh auth login --hostname github.com   # add another account
 gh auth switch                        # switch between them
 gh auth logout                        # remove current account
@@ -233,7 +233,7 @@ gh auth logout                        # remove current account
 
 Every `gh` command follows the same logical pattern:
 
-```
+```bash
 gh  [topic]  [action]  [target]  [flags]
  │      │        │         │         │
  │      │        │         │         └─ modifiers (--flag value)
@@ -244,7 +244,7 @@ gh  [topic]  [action]  [target]  [flags]
 ```
 
 **Examples:**
-```
+```bash
 gh  repo    create   my-project  --public
 gh  pr      merge    42          --squash
 gh  issue   close    17          --comment "Fixed in #23"
@@ -308,7 +308,7 @@ gh repo fork owner/repo-name --clone --remote
 
 The difference between `git clone` and `gh repo clone`:
 
-```
+```bash
 git clone https://github.com/owner/repo.git
   → clones the repo, requires you to handle auth manually for private repos
 
@@ -392,7 +392,7 @@ gh pr checkout 42
 
 This is genuinely one of the most useful commands in all of `gh`. Instead of:
 
-```
+```text
 # Old way
 git fetch origin pull/42/head:pr-42
 git checkout pr-42
@@ -667,7 +667,7 @@ gh search code "gh.AuthTokenFromEnv" --repo cli/cli
 
 **Useful search qualifiers:**
 
-```
+```text
 --language python         filter by programming language
 --stars ">500"            minimum star count
 --sort stars|forks|updated  sort order
@@ -851,6 +851,7 @@ gh pr checks --watch   # stream live CI status for the current branch's PR
 ---
 
 ## The Full Command Reference
+
 </br>
 </br>
 <details>
@@ -956,12 +957,12 @@ gh pr checks --watch   # stream live CI status for the current branch's PR
 
 MIT License - fork it, adapt it, translate it, share it freely.
 
-```
+```text
 Stop clicking.
 Start shipping.
 ```
 <div align="center">
-  
+
 <img src="https://capsule-render.vercel.app/api?type=blur&color=7F1D1D&height=160&section=footer&text=More%20guides%20coming%20soon.&fontSize=28&fontColor=FCA5A5&fontAlignY=65" width="100%" />
 
 </div>

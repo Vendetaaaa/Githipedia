@@ -51,7 +51,7 @@ lyu --action subtract
 
 ## Output
 
-```
+```json
 [CHANGE] 2021-2025 -> 2021-2026
 [SUCCESS] Updated ./LICENSE
 ```

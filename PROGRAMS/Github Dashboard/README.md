@@ -3,7 +3,7 @@
 A rich, animated terminal dashboard for GitHub - built with **pure Python** and zero third-party dependencies.
 
 <div align="center">
-  
+
 <img src="Program1.png">
 
 </div>
@@ -50,7 +50,7 @@ python "Github DashBoard.py"
 
 On first launch the setup wizard runs automatically:
 
-```
+```text
   ╔══════════════════════════════════════╗
   ║     GITHUB DASHBOARD SETUP WIZARD    ║
   ╚══════════════════════════════════════╝

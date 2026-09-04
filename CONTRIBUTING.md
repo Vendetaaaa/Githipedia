@@ -15,15 +15,18 @@ No matter what you do, it is always welcomed!
 ## What You Can Contribute
 
 ### 1. **Documentation and guides**
+
 - New REPO folders covering GitHub features not yet documented;
 - Updates to existing guides when GitHub changes something;
 - Better examples, clearer explanations, additional context;
 
 ### 2. **Corrections**
+
 - Typos, broken links, outdated information;
 - Inaccurate steps or screenshots that no longer match the current GitHub UI;
 
 ### 3. **Suggestions**
+
 - Ideas for topics to cover, even if you are not writing them yourself;
 - Feedback on how the content is structured or explained;
 
@@ -85,7 +88,7 @@ All content in Githipedia follows the same style so everything feels consistent.
 
 Each REPO lives in its own folder under `/REPOS/` and must have a `README.md` + MIT LICENSE as its main files.
 
-```
+```text
 REPOS/
   REPO N - Topic Name/
     README.md

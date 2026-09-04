@@ -88,7 +88,7 @@ You don't have to decide forever. Plans can be upgraded later without moving rep
 
 **5.** Once it's created, you land on the org's dashboard. This is your control center from now on, accessible any time at:
 
-```
+```text
 github.com/orgs/YOUR-ORG-NAME/dashboard
 ```
 

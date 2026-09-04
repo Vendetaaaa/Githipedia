@@ -19,7 +19,7 @@ Disagree with someone's idea, not with them as a person. Everyone here is volunt
 New contributors are learning. Experienced ones make mistakes. Both deserve patience and a helping hand, not frustration.
 
 **Be constructive**
-If something is wrong, explain why and suggest a fix. A comment like "this is incorrect, the actual behavior is X because Y" is useful. 
+If something is wrong, explain why and suggest a fix. A comment like "this is incorrect, the actual behavior is X because Y" is useful.
 
 > Just "this is wrong" is not a solution.
 

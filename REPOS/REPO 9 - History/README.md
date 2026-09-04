@@ -14,7 +14,7 @@ To understand why GitHub mattered, you have to understand what collaboration loo
 
 In the early 2000s, most teams used centralized version control systems like CVS or Subversion, usually called SVN. The model worked like this: there was one central server, and everyone pushed their code to it. If the server went down, work stopped. If two people edited the same file, the conflicts were a nightmare to sort out. Branching was so slow and painful that many teams just did not bother with it at all.
 
-```
+```text
 Old model (SVN):
    Dev A ──► Central Server ◄── Dev B
               (single point of failure)
@@ -38,7 +38,7 @@ Before GitHub, there was Git, and without Git, GitHub would not exist.
 
 Linus Torvalds, the creator of the Linux kernel, built Git in April 2005 in roughly ten days. He needed a distributed version control system for the Linux kernel after the project lost access to the tool it had been using. His goals were speed, simplicity, and the ability for thousands of contributors to work in parallel without a central server becoming a bottleneck.
 
-```
+```text
 April 3, 2005   --> Linus announces he is writing a new version control system
 April 6, 2005   --> First commit to the Git source tree (made using Git itself)
 April 7, 2005   --> Git is hosting its own source code
@@ -56,7 +56,7 @@ Tom Preston-Werner and Chris Wanstrath met at a Ruby meetup in San Francisco in 
 
 P.J. Hyett joined shortly after. The three launched GitHub publicly on April 10, 2008, after a period of private beta testing. Scott Chacon came on board as one of the earliest employees, focusing on Git education and helping developers actually understand how to use the tool.
 
-```
+```text
 Late 2007    --> Preston-Werner and Wanstrath start building GitHub
 January 2008 --> Private beta launches
 April 10, 2008 --> GitHub goes public
@@ -91,7 +91,7 @@ GitHub stopped being just a tool for developers and started becoming something c
 
 Governments began using it to publish open data and legislation. Writers used it to version-control books. Scientists used it to collaborate on research papers. The phrase "GitHub for X" became shorthand for transparent, version-controlled collaboration in any field at all.
 
-```
+```text
 2013 --> 3,000,000 users and 5,000,000 repositories
 2013 --> GitHub for Windows and GitHub for Mac released
 2014 --> GitHub Enterprise hits $100M in annual recurring revenue
@@ -113,7 +113,7 @@ On June 4, 2018, Microsoft announced it was acquiring GitHub for $7.5 billion in
 
 The reaction was immediate and split right down the middle. Thousands of developers moved their repositories to GitLab in the days after the announcement, worried that Microsoft would ruin what made GitHub worth using. Others pointed out that Microsoft had quietly become one of the largest contributors to open source anywhere in the world, and that the acquisition made a lot of sense once you looked at the numbers.
 
-```
+```text
 June 4, 2018     --> Microsoft acquisition announced at $7.5 billion
 June 4 to 7, 2018 --> GitLab reports a 10x spike in repository imports
 October 26, 2018 --> Acquisition officially closes
@@ -133,7 +133,7 @@ Then GitHub did something that nobody saw coming.
 
 In February 2020, GitHub photographed every active public repository onto archival film reels and transported them to a decommissioned coal mine deep inside a mountain in Svalbard, Norway. The facility sits 250 meters underground in permafrost designed to last for well over a thousand years.
 
-```
+```text
 Your public repo on GitHub
         |
         v
@@ -159,7 +159,7 @@ On June 29, 2021, GitHub launched GitHub Copilot in technical preview. Built wit
 
 It was immediately controversial, because it was trained on public GitHub code and raised real questions about copyright and attribution that the industry is still working through today. It was also immediately popular.
 
-```
+```text
 June 2021     --> Copilot technical preview opens
 June 2022     --> Copilot becomes generally available at $10 per month
 March 2023    --> Copilot X announced, adding chat, voice, and PR summaries
@@ -176,7 +176,7 @@ GitHub crossed 150 million registered developers in 2025, which makes it the lar
 
 The platform has kept expanding its AI capabilities under the Copilot brand, adding coding agents, pull request automation, code review assistance, and deeper connections to development environments beyond VS Code. A free tier of Copilot on GitHub.com launched in 2025, making AI-assisted coding accessible to anyone with a GitHub account.
 
-```
+```text
 2024 --> GitHub Copilot Workspace announced
 2024 --> Over 420 million public repositories on the platform
 2025 --> 150 million registered developers

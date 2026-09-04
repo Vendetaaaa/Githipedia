@@ -53,7 +53,7 @@ The whole thing is open source and lives at [github.com/github/advisory-database
 
 Modern software depends on code written by other people. Your `package.json`, `requirements.txt`, or `go.mod` is basically a list of trust relationships, and any one of those packages could have a vulnerability that ends up in your project.
 
-```
+```text
 Your app
   └── depends on library-x v2.1.0
         └── library-x v2.1.0 has a known SQL injection vulnerability
@@ -72,7 +72,7 @@ You don't need to check it manually every day. But understanding how it works he
 
 A vulnerability is a flaw in software that could be exploited to cause harm. Data leaks, unauthorized access, system crashes. It's not always a traditional bug either; sometimes it's a design decision that turns out to be unsafe, or two features that interact in a dangerous way.
 
-```
+```text
 A vulnerability can damage:
   → Confidentiality  (data leaks, unauthorized access)
   → Integrity        (data tampering, code execution)
@@ -85,7 +85,7 @@ A vulnerability that requires physical access to exploit is very different from 
 
 CVE stands for **Common Vulnerabilities and Exposures**. It's a standardised ID assigned to publicly known vulnerabilities, a universal reference number so that different databases, tools, and teams can all talk about the same issue without confusion.
 
-```
+```text
 Format:  CVE-YEAR-NUMBER
 Example: CVE-2021-44228  ← Log4Shell, one of the most severe ever found
 ```
@@ -96,7 +96,7 @@ CVEs are assigned by organisations called CVE Numbering Authorities (CNAs). GitH
 
 Every advisory in the database gets its own unique identifier called a **GHSA ID**, regardless of whether a CVE exists.
 
-```
+```text
 Format:  GHSA-xxxx-xxxx-xxxx
 Example: GHSA-jfh8-c2jp-hdpw
 ```
@@ -147,7 +147,7 @@ This means the data is machine-readable and interoperable. Tools outside GitHub'
 
 The gold standard. A GitHub security analyst has manually examined the advisory, verified it's valid, confirmed affected and patched versions, and made sure the description is accurate.
 
-```
+```text
 Source   → CVE feed, community, or GitHub's own research
 Review   → GitHub Security Curation team validates manually
 Outcome  → Full description, accurate version ranges, ecosystem mapping
@@ -160,7 +160,7 @@ This is the type that actually matters for most developers. When Dependabot aler
 
 These come straight from the National Vulnerability Database (NVD) feed, imported automatically without a manual review pass. That doesn't mean they're wrong; many have actually been looked at. But they haven't been through the full curation process.
 
-```
+```text
 Source   → NVD automatic feed
 Review   → Not fully curated; may lack package mapping or version details
 Dependabot → NO - Dependabot does not alert on unreviewed advisories
@@ -176,7 +176,7 @@ Search `type:malware` in the database. Worth knowing about, especially if you ma
 
 **The most common type is typosquatting.** An attacker publishes a malicious package with a name very similar to a popular legitimate one, hoping developers install it by mistake.
 
-```
+```text
 Legitimate:  lodash        (200M+ weekly downloads)
 Malicious:   1odash        (lowercase L instead of i)
              lodash-utils  (sounds plausible)
@@ -187,7 +187,7 @@ Malicious:   1odash        (lowercase L instead of i)
 
 ## Where Does the Data Come From?
 
-```
+```text
 National Vulnerability Database (NVD)  →  primary source for CVEs globally
 GitHub Security Research               →  vulnerabilities found by GitHub's team
 Community Contributions                →  PRs from developers worldwide
@@ -227,7 +227,7 @@ A GitHub-reviewed advisory is only possible for packages in a supported ecosyste
 
 Every advisory contains the same core fields:
 
-```
+```text
 GHSA ID         →  permanent unique identifier
 CVE ID          →  cross-reference to global CVE database (if assigned)
 Summary         →  one-line description
@@ -261,7 +261,7 @@ The **CWE ID** is useful when you want to understand *what kind* of vulnerabilit
 
 The Advisory Database and Dependabot are two halves of the same system. The database is the knowledge store; Dependabot is the engine that acts on it.
 
-```
+```text
 Step 1 → you add a dependency to your project
 Step 2 → GitHub's dependency graph records it
 Step 3 → a new GitHub-reviewed advisory is published for that package/version
@@ -274,13 +274,13 @@ Dependabot only triggers on **reviewed** advisories. Unreviewed ones haven't bee
 
 **Enabling Dependabot alerts:**
 
-```
+```text
 Your repo → Settings → Security & analysis → Dependabot alerts → Enable
 ```
 
 Or across your whole organisation:
 
-```
+```text
 Org settings → Code security → Dependabot alerts → Enable for all repositories
 ```
 
@@ -292,7 +292,7 @@ Browse and search at [github.com/advisories](https://github.com/advisories).
 
 **Search filters:**
 
-```
+```text
 type:reviewed         →  GitHub-reviewed only
 type:unreviewed       →  unreviewed only
 type:malware          →  malware only
@@ -349,7 +349,7 @@ Clone the [advisory-database repo](https://github.com/github/advisory-database),
 
 Things worth contributing:
 
-```
+```text
 → Missing or incorrect affected version ranges
 → Additional references (patches, blog posts, PoC links)
 → More accurate CWE classifications
@@ -365,7 +365,7 @@ One limitation: community contributions are only accepted for advisories in supp
 
 The database has grown a lot:
 
-```
+```text
 2019 (launch)  →  < 400 reviewed advisories
 2024 (Oct)     →  > 20,000 reviewed advisories
 2025-2026      →  25,000+ total across all types
@@ -414,7 +414,7 @@ Because they haven't been validated. They come straight from the NVD feed and ma
 ---
 
 <div align="center">
-  
+
 [![](https://capsule-render.vercel.app/api?type=blur&color=7F1D1D&height=160&section=footer&text=Stay+patched.+Stay+safe.&fontSize=28&fontColor=FCA5A5&fontAlignY=65)](https://github.com/Vendetaaaa/Githipedia)
 
 </div>

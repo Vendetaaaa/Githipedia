@@ -114,7 +114,7 @@ Normally $4/month. Included automatically with GitHub Education.
 
 What it adds:
 
-```
+```text
 Free Account                GitHub Pro (Student)
 ─────────────────────────────────────────────────────
 Pages on public repos       Pages on private repos too
@@ -143,7 +143,7 @@ Before you start, have one of these ready:
 
 **2.** Add your school email to your account:
 
-```
+```text
 Settings → Emails → Add email address → enter your .edu email → verify it
 ```
 
@@ -235,7 +235,7 @@ Countries where students have widely reported success include the US, UK, Canada
 
 As long as your student status is active and verifiable.
 
-```
+```text
 Apply → Approved → Benefits active (typically 1-2 years)
                          ↓
               GitHub sends an expiry notice
@@ -306,7 +306,7 @@ You'll want to already be involved in your campus tech scene before applying. Th
 MIT - fork it, adapt it, translate it, share it freely.
 
 <div align="center">
-  
+
 [![](https://capsule-render.vercel.app/api?type=blur&color=7F1D1D&height=160&section=footer&text=Go+apply.+It%27s+free.&fontSize=32&fontColor=FCA5A5&fontAlignY=65)](https://education.github.com)
 
 </div>

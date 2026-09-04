@@ -67,7 +67,7 @@ The most common use is CI/CD. Every time someone pushes code, run the tests. Eve
 
 It runs in the cloud by default on GitHub's infrastructure. You don't set up servers, you don't install anything. You write YAML and it runs.
 
-```
+```text
 You push code
     ↓
 GitHub detects the event
@@ -87,7 +87,7 @@ GitHub Actions has its own vocabulary and the docs assume you already know it. R
 
 A workflow is an automated process you define in a YAML file. It lives in `.github/workflows/` in your repo. You can have as many as you want, one for CI, one for deployment, one for issue triage, whatever you need.
 
-```
+```text
 your-repo/
 └── .github/
     └── workflows/
@@ -181,7 +181,7 @@ jobs:
 
 What each part does:
 
-```
+```yaml
 name:        → the display name in the Actions tab
 on:          → what triggers this workflow (push to any branch)
 jobs:        → list of jobs to run
@@ -241,7 +241,7 @@ on:
     - cron: '0 9 * * 1'    # every Monday at 9am UTC
 ```
 
-```
+```text
 ┌───────── minute (0-59)
 │ ┌───────── hour (0-23)
 │ │ ┌───────── day of month (1-31)
@@ -494,7 +494,7 @@ Secrets are encrypted values stored in your repo or org settings. Never put pass
 
 **Adding a secret:**
 
-```
+```text
 Repo → Settings → Secrets and variables → Actions → New repository secret
 ```
 
@@ -744,7 +744,7 @@ Caching saves time by reusing files from previous runs instead of re-downloading
 
 How it works:
 
-```
+```text
 First run  → no cache found → install deps → save cache with key
 Next run   → cache found, key matches → restore it → skip install
 Lock file changes → key doesn't match → install fresh → save new cache
@@ -876,7 +876,7 @@ More powerful than composite. Full access to the GitHub Actions toolkit. Good wh
 
 Structure:
 
-```
+```text
 my-action/
 ├── action.yml
 ├── index.js
@@ -997,7 +997,7 @@ GitHub's hosted runners cover most use cases, but sometimes you need your own ma
 
 **Adding a self-hosted runner:**
 
-```
+```text
 Repo → Settings → Actions → Runners → New self-hosted runner
 ```
 
@@ -1028,7 +1028,7 @@ Runners don't get cleaned up automatically between jobs the way GitHub-hosted on
 
 Add these as secrets in your repo (not environment variables, they need to be secrets):
 
-```
+```text
 ACTIONS_RUNNER_DEBUG = true
 ACTIONS_STEP_DEBUG = true
 ```
@@ -1059,7 +1059,7 @@ Re-run the failed workflow and you'll get verbose output.
 
 **Common errors:**
 
-```
+```text
 Error: Resource not accessible by integration
 → Your GITHUB_TOKEN doesn't have the right permissions. Add a permissions: block.
 
@@ -1106,7 +1106,7 @@ So 1 minute on macOS uses 10 minutes of your allowance. If you're running into l
 
 **Other limits:**
 
-```
+```text
 Workflow run time:       6 hours maximum
 Job run time:            6 hours maximum
 Jobs per workflow:       255

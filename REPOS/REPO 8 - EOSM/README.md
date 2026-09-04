@@ -72,7 +72,7 @@ Go to [github.com/sponsors](https://github.com/sponsors) and click **"Get sponso
 
 Once approved, fill in your sponsor profile properly. This is the page people see before they decide to support you. What it needs:
 
-```
+```text
 ✅ A clear one-line description of what you build and maintain
 ✅ A longer "About" section: what problems you solve, who uses your work
 ✅ Links to your notable projects
@@ -83,7 +83,7 @@ Once approved, fill in your sponsor profile properly. This is the page people se
 
 This is the file that makes the "Sponsor" button appear on your repositories. Create it at:
 
-```
+```text
 YOUR-REPO/.github/FUNDING.yml
 ```
 
@@ -265,7 +265,7 @@ If there's something you keep doing manually in your CI pipelines, it's probably
 
 **The minimum file structure for a JavaScript Action:**
 
-```
+```text
 my-action/
 ├── action.yml        ← defines inputs, outputs, and entrypoint
 ├── index.js          ← the actual logic
