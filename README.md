@@ -86,7 +86,7 @@ The guides are written so you can read them top to bottom if you're learning som
  
 ## Contributing
  
-If something is wrong, outdated, or missing, [open an issue](issues/new). Corrections, typo fixes, suggestions for new guides, all of it is welcome.
+If something is wrong, outdated, or missing, [open an issue](https://github.com/Vendetaaaa/Githipedia/issues/new). Corrections, typo fixes, suggestions for new guides, all of it is welcome.
  
 If you want to write a guide yourself, open an issue first so we can coordinate. No point in two people writing the same thing at the same time.
  
