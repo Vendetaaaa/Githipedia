@@ -24,6 +24,7 @@ jobs:
           args: >
             --verbose
             --no-progress
+            --method GET
             --accept 200,201,202,203,204,301,302,303,307,308,403,429
             "**/*.md"
           fail: true
