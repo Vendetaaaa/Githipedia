@@ -233,7 +233,7 @@ For finding something to build, use, or contribute to.
 
 ## Contributing
 
-Found a dead link, or know one that deserves a spot on this list? [Open an issue](../../issues/new) : this list only stays useful if it stays current.
+Found a dead link, or know one that deserves a spot on this list? [Open an issue](https://github.com/Vendetaaaa/Githipedia/issues/new): this list only stays useful if it stays current.
 
 ---
 
