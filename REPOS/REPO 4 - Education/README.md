@@ -56,7 +56,7 @@ There are two tracks:
 You qualify if all three of these are true:
 
 | Requirement | Details |
-|---|---|
+| --- | --- |
 | **Currently enrolled** | At an accredited institution - university, college, bootcamp, high school |
 | **Age** | 13 or older |
 | **Have proof** | A school email address OR official enrollment documentation |
@@ -82,7 +82,7 @@ The main event. A curated bundle of tools that professionals pay for, free while
 Some of the most valuable inclusions as of 2026:
 
 | Tool | Normal Price | What You Get |
-|---|---|---|
+| --- | --- | --- |
 | **GitHub Copilot** | $10/month | Full AI code completion, unlimited |
 | **JetBrains IDEs** | $249/year | All professional IDEs free |
 | **Namecheap** | $13+/year | Free `.me` domain + SSL |
@@ -136,6 +136,7 @@ No protected branches       Protected branches on any repo
 The application is at **[education.github.com/discount_requests/application](https://education.github.com/discount_requests/application)**.
 
 Before you start, have one of these ready:
+
 - Your **school-issued email** (e.g. `you@university.edu`)
 - **OR** a document proving enrollment: transcript, student ID, acceptance letter, tuition receipt
 
@@ -170,6 +171,7 @@ GitHub uses a two-path system depending on what you provide.
 If your school email ends in `.edu` (US) or another recognized academic domain, GitHub can often auto-verify you without needing any documents. This can happen in minutes.
 
 To maximize your shot at auto-approval:
+
 - Add and verify your `.edu` email to your GitHub account *before* applying
 - Select that email when you apply
 - Make sure your GitHub account has a real profile photo and bio; new, empty-looking accounts sometimes get flagged
@@ -181,7 +183,7 @@ If you don't have a school email or it can't be auto-verified, you'll be asked t
 **What works:**
 
 | Document | Requirements |
-|---|---|
+| --- | --- |
 | Student ID | Must show name, institution, current academic year |
 | Official transcript | Current semester, shows your name and school |
 | Enrollment letter | From registrar or admissions |
@@ -189,6 +191,7 @@ If you don't have a school email or it can't be auto-verified, you'll be asked t
 | Report card | For high school students |
 
 **Tips:**
+
 - The date needs to be current. A transcript from two semesters ago often gets rejected
 - Upload a clear, unobstructed photo or scan. Blurry images get declined automatically
 - During peak times (September and January when semesters start) manual review can take 1-2 weeks
@@ -223,7 +226,7 @@ GitHub Education is available worldwide. There's no built-in country restriction
 A few things vary by region:
 
 | What Varies | Details |
-|---|---|
+| --- | --- |
 | **School email recognition** | US `.edu` addresses auto-verify. Other countries use different TLDs (`.ac.uk`, `.edu.au`, etc.); these also work but usually go to manual review |
 | **Partner offer availability** | Some Pack partners restrict to certain countries; check each partner's page |
 
@@ -273,6 +276,7 @@ GitHub Classroom is worth setting up even if you don't care about the other bene
 A separate program for student leaders who want to build developer communities on their campus. This one isn't just about free tools; it's for people who are already active.
 
 **What you get:**
+
 - Official Campus Expert title and a platform to run events under GitHub's umbrella
 - Training and workshops from GitHub staff
 - GitHub swag and event funding
@@ -289,7 +293,7 @@ You'll want to already be involved in your campus tech scene before applying. Th
 ## Resources
 
 | Resource | What It Gets You |
-|---|---|
+| --- | --- |
 | [GitHub Education](https://education.github.com) | Official program homepage |
 | [Student Developer Pack](https://education.github.com/pack) | Full list of current Pack offers |
 | [GitHub Classroom](https://classroom.github.com) | Assignment and grading tools for educators |

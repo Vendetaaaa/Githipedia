@@ -11,7 +11,6 @@
 ![Last Updated](https://img.shields.io/badge/Last%20Updated-2026-7F1D1D?style=for-the-badge&labelColor=1a1a1a)
 ![License](https://img.shields.io/badge/License-MIT-7F1D1D?style=for-the-badge&labelColor=1a1a1a)
 
-
 </div>
 
 ---
@@ -24,7 +23,7 @@ Githipedia is the alternative. Every guide here is written to actually explain t
 
 It's a living project. New guides get added, existing ones get updated when things change, and the whole thing is open source. If something's wrong or missing, you can fix it.
 
-> ### 💡 There is always more on the way to help this open-source encyclopedia become richer and better.
+> ### 💡 There is always more on the way to help this open-source encyclopedia become richer and better
 
 ---
 
@@ -33,7 +32,7 @@ It's a living project. New guides get added, existing ones get updated when thin
 <div align="center">
 
 | | Documentations | What They Cover |
-|:---:|:---|:---|
+| :---: | :--- | :--- |
 | 🏆 | [**GitHub Achievements**](./REPOS/REPO%201%20-%20Achievements_and_Badges/README.md) | Every badge you can earn, step-by-step instructions for each one, and the stories behind the two legacy badges that are gone forever |
 | 🖼️ | [**GitHub Profile**](./REPOS/REPO%202%20-%20Profile/README.md) | Everything from avatar and bio to animated banners, stats cards, and the profile README trick most developers don't know about |
 | 🛡️ | [**GitHub Advisory Database**](./REPOS/REPO%203%20-%20Advisory%20Database/README.md) | How the database that quietly protects your dependencies actually works, CVEs, GHSA IDs, severity scores, Dependabot, all of it |
@@ -52,6 +51,7 @@ It's a living project. New guides get added, existing ones get updated when thin
 | 👥 | [**Github's Orgs**](./REPOS1/README.md) | Everything there is to know about orgs, from the fundamentals to the most obscure details |
 | 🧑‍💻 | [**Git**](./REPOS/REPO%2016%20-%20Git%20commands/README.md) | Everything there is to know about Git commands, what is it and how does it work |
 | 🖇️ | [**100 Links**](./REPOS/REPO%2017%20-%20100%20Useful%20Links/README.md) | 100 links about Github, very helpful to build the foundation of Github |
+
 </div>
 
 ---
@@ -61,15 +61,16 @@ It's a living project. New guides get added, existing ones get updated when thin
 <div align="center">
 
 | | Programs | What They Do |
-|:---:|:---|:---|
+| :---: | :--- | :--- |
 | 💎 | [**Github Terminal DashBoard**](./PROGRAMS/Github%20Dashboard) | A rich, animated terminal dashboard for GitHub |
 | ⚙️ | [**Github Rescope**](./PROGRAMS/GRS) | Simple solution to a painful part of being a dev |
 | ⁉️ | [**Github Issue Labeler**](https://github.com/Vendetaaaa/issue-labeler) | How to handle multiple issues across multiple repos |
 | 💬 | [**Github README generator**](https://vendetaaaa.github.io/readme-generator/) | How to create a good profile without knowing markdown |
 | 🪪 | [**Github LICENSE updater**](./PROGRAMS/LYU) | Easy to change the date on LICENSE on all your github repos |
 | ❤️‍🩹 | [**Github Health Check**](https://github.com/Vendetaaaa/health-check) | A CLI tool made to verify your integrity and how to improve your repo |
-| 🤖 | [**Github Triage Issue Bot**](https://github.com/Vendetaaaa/issue-triage-bot) | A bot that handles issues like a good boy 😍|
+| 🤖 | [**Github Triage Issue Bot**](https://github.com/Vendetaaaa/issue-triage-bot) | A bot that handles issues like a good boy 😍 |
 | 😋 | [**Github Local Web Server**](https://github.com/Vendetaaaa/GitTunnel) | A self-hosted CLI tool to reveal a self-hosted SSH reversed proxy |
+
 </div>
 
 ---
@@ -100,7 +101,7 @@ Everything in this repo is open source. See [LICENSE](./LICENSE) for the full te
 
 ---
 
-## Check out also:
+## Check out also
 
 ### [Code of conduct](./CODE_OF_CONDUCT.md) &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; [Contributing](./CONTRIBUTING.md) &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;[Credits](./CREDITS.md) &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; [Security](./SECURITY.md)
 

@@ -8,7 +8,6 @@
 
 </div>
 
-
 ---
 
 ## Table of Contents
@@ -59,6 +58,7 @@ The key thing that makes it different from platforms like Patreon or Ko-fi is th
 Before anyone can sponsor you, you need to apply for the program. Approval usually takes a few business days.
 
 **Requirements before applying:**
+
 - A verified email address on your GitHub account
 - A completed billing profile
 - Two-factor authentication enabled
@@ -113,7 +113,7 @@ Tiers are what your sponsors choose from. GitHub lets you create up to **10 cust
 A common structure that actually works:
 
 | Tier | Monthly Price | What It Typically Includes |
-|------|--------------|---------------------------|
+| ------ | -------------- | --------------------------- |
 | ☕ Coffee | $1 - $5 | A thank you, name in the README |
 | 🛠️ Supporter | $10 - $20 | Priority issue responses, sponsor badge |
 | 🚀 Sustainer | $50 - $100 | Logo in README, early access to updates |
@@ -134,6 +134,7 @@ A common structure that actually works:
 GitHub pays out monthly, on the 22nd of each month, for the previous month's sponsorships.
 
 **Payment methods GitHub supports:**
+
 - Direct bank transfer (most countries)
 - PayPal (where available)
 
@@ -148,6 +149,7 @@ Minimum payout threshold is $100. If your balance is below that, it carries over
 Getting your first sponsor is the hard part. Keeping them and growing is about communication.
 
 **What sponsors actually want:**
+
 - To know their money is doing something. Post updates. Even a short monthly note saying "shipped X, working on Y" goes a long way.
 - Transparency. If you're burned out, say so. If the project is on hold, say so. People stop sponsoring when they stop hearing from you, not when things are slow.
 
@@ -208,7 +210,7 @@ Go to [github.com/marketplace](https://github.com/marketplace). You can filter b
 The most-used categories:
 
 | Category | What You'll Find |
-|----------|-----------------|
+| ---------- | ----------------- |
 | 🔍 Code Quality | Linters, formatters, review tools |
 | 🚀 Deployment | Heroku, Vercel, Railway, Fly.io integrations |
 | 🔒 Security | Secret scanning, vulnerability checks |
@@ -258,7 +260,7 @@ If there's something you keep doing manually in your CI pipelines, it's probably
 **Three types of Actions:**
 
 | Type | Best For | Language |
-|------|----------|----------|
+| ------ | ---------- | ---------- |
 | JavaScript / TypeScript | Most things, fast startup, full npm access | JS / TS |
 | Docker container | Complex environments, specific OS dependencies | Any |
 | Composite | Combining existing Actions into one | YAML |
@@ -323,6 +325,7 @@ npm install @actions/core @actions/github
 Once your Action works, publishing it takes about five minutes.
 
 **Requirements:**
+
 - The repo must be public
 - An `action.yml` file must be at the root of the repo
 - The repo must have a description set
@@ -375,7 +378,7 @@ Paid Marketplace Apps tend to succeed when they automate something painful and o
 ## Resources & Further Reading
 
 | Resource | What It Gets You |
-|----------|-----------------|
+| ---------- | ----------------- |
 | [GitHub Sponsors Docs](https://docs.github.com/en/sponsors) | Complete official documentation for setting up and managing sponsorships |
 | [GitHub Marketplace Docs](https://docs.github.com/en/apps/publishing-apps-to-github-marketplace) | Full guide to listing and managing Marketplace apps |
 | [Actions Toolkit](https://github.com/actions/toolkit) | The official npm packages for building GitHub Actions |

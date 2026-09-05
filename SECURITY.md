@@ -13,16 +13,19 @@
 The main part of Githipedia is markdown, but there are also a PROGRAMS section, beware:
 
 **In the content itself:**
+
 - A guide that accidentally teaches an insecure practice (for example, suggesting someone expose a GitHub token in a workflow file);
 - Documentation that leads readers toward behaviors that could compromise their own GitHub accounts or repos;
 - Misleading instructions around GitHub's permission system, branch protection, or access control;
 
 **In the programs itself:**
+
 - A program is made to share cool stuff that you have made with the scope of making github easier/cooler, keep it that way;
 - Do not share malicious content;
 - Viruses, malwares and any as such or any kind there is and will be are prohibited;
 
 **In the repository itself:**
+
 - A GitHub Actions workflow in this repo that has a security flaw;
 - A dependency used by any tooling in this repo that has a known vulnerability;
 - Something in the repo structure that could be exploited via pull request injection or similar;
@@ -40,6 +43,7 @@ Do not open a public issue for security concerns. Instead:
 3. Or contact the maintainer directly through their [GitHub profile](https://github.com/Vendetaaaa)
 
 Please include as much detail as you can:
+
 - What the issue is
 - Where exactly it is (file name, section, line if relevant)
 - Why it is a problem

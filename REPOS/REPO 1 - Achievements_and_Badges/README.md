@@ -38,6 +38,7 @@ A clean reference for every GitHub achievement and badge. Each one is explained 
 - [Showing Your Badges](#showing-your-badges)
 - [Resources](#resources--further-reading)
 - [License](#license)
+
 ---
 
 ## What Are GitHub Achievements?
@@ -116,7 +117,7 @@ When a PR is **merged**, the changes were accepted and permanently combined into
 <div align="center">
 
 | Badge | Difficulty | Type | Earnable? |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | 🔫 Quick Draw | ⭐⭐ Medium | Pull Request | ✅ |
 | 🦈 Pull Shark | ⭐ Easy | Pull Request | ✅ |
 | 🧠 Galaxy Brain | ⭐⭐⭐ Hard | Pull Request | ✅ |
@@ -174,7 +175,7 @@ git push origin quick-fix
 ### 🦈 Pull Shark
 
 | Tier | x1 | x2 | x3 | x4 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | **Badge** | [![](./Badges/PullShark/PS-T1.png)](./Badges/PullShark/PS-T1.png) | [![](./Badges/PullShark/PS-T2.png)](./Badges/PullShark/PS-T2.png) | [![](./Badges/PullShark/PS-T3.png)](./Badges/PullShark/PS-T3.png) | [![](./Badges/PullShark/PS-T4.png)](./Badges/PullShark/PS-T4.png) |
 | **PRs Needed** | 2 | 16 | 128 | 1024 |
 
@@ -204,7 +205,8 @@ Once you find something:
 ❌  "fix stuff"
 ```
 
-4. Reply to review comments. The maintainer gave up time to look at your work.
+1. Reply to review comments. The maintainer gave up time to look at your work.
+
 > 💡 The easiest wins for beginners are usually documentation fixes, typo corrections, and broken links. They get merged fast because the risk to the codebase is basically zero.
 
 ---
@@ -212,7 +214,7 @@ Once you find something:
 ### 🧠 Galaxy Brain
 
 | Tier | x1 | x2 | x3 | x4 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | **Badge** | [![](./Badges/GalaxyBrain/GB-T1.png)](./Badges/GalaxyBrain/GB-T1.png) | [![](./Badges/GalaxyBrain/GB-T2.png)](./Badges/GalaxyBrain/GB-T2.png) | [![](./Badges/GalaxyBrain/GB-T3.png)](./Badges/GalaxyBrain/GB-T3.png) | [![](./Badges/GalaxyBrain/GB-T4.png)](./Badges/GalaxyBrain/GB-T4.png) |
 | **Approvals Needed** | 2 | 8 | 16 | 32 |
 
@@ -266,7 +268,7 @@ In practice you'll do this on your own repo. No reviewers, no approvals, no wait
 ### 👥 Pair Extraordinaire
 
 | Tier | x1 | x2 | x3 | x4 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | **Badge** | [![](./Badges/PairExtra/PE-T1.png)](./Badges/PairExtra/PE-T1.png) | [![](./Badges/PairExtra/PE-T2.png)](./Badges/PairExtra/PE-T2.png) | [![](./Badges/PairExtra/PE-T3.png)](./Badges/PairExtra/PE-T3.png) | [![](./Badges/PairExtra/PE-T4.png)](./Badges/PairExtra/PE-T4.png) |
 | **Co-authored PRs** | 1 | 10 | 24 | 48 |
 
@@ -299,7 +301,7 @@ Both push → PR opens → PR merges → Both earn the badge ✅
 ### ⭐ Starstruck
 
 | Tier | x1 | x2 | x3 | x4 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | **Badge** | [![](./Badges/Starstruck/SS-T1.png)](./Badges/Starstruck/SS-T1.png) | [![](./Badges/Starstruck/SS-T2.png)](./Badges/Starstruck/SS-T2.png) | [![](./Badges/Starstruck/SS.T3.png)](./Badges/Starstruck/SS.T3.png) | [![](./Badges/Starstruck/SS-T4.png)](./Badges/Starstruck/SS-T4.png) |
 | **Stars Needed** | 16 | 128 | 512 | 4096 |
 
@@ -310,7 +312,7 @@ Stars are GitHub's bookmarking system. When someone stars your repo it means the
 #### What tends to attract stars
 
 | What You Build | Examples |
-|---|---|
+| --- | --- |
 | 🛠️ Developer tools | CLI scripts, VS Code extensions, browser add-ons |
 | 📚 Study notes | Course summaries, language cheatsheets, algorithm guides |
 | 🎨 Templates | GitHub profile READMEs, resume templates, starter kits |
@@ -332,7 +334,7 @@ Stars are GitHub's bookmarking system. When someone stars your repo it means the
 ### ❤️ Heart on Your Sleeve
 
 | Tier | x1 | x2 | x3 | x4 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | **Badge** | [![](./Badges/HeartsS/HS-T1.png)](./Badges/HeartsS/HS-T1.png) | [![](./Badges/HeartsS/HS-T2.png)](./Badges/HeartsS/HS-T2.png) | [![](./Badges/HeartsS/HS-T3.png)](./Badges/HeartsS/HS-T3.png) | [![](./Badges/HeartsS/HS-T4.png)](./Badges/HeartsS/HS-T4.png) |
 | **Required** | ❓ | ❓ | ❓ | ❓ |
 
@@ -343,7 +345,7 @@ The exact requirements for this badge haven't been publicly documented. If you'v
 ### 🧙 Open Sourcerer
 
 | Tier | x1 | x2 | x3 | x4 |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | **Badge** | [![](./Badges/OpenS/OS-T1.png)](./Badges/OpenS/OS-T1.png) | [![](./Badges/OpenS/OS-T2.png)](./Badges/OpenS/OS-T2.png) | [![](./Badges/OpenS/OS-T3.png)](./Badges/OpenS/OS-T3.png) | [![](./Badges/OpenS/OS-T4.png)](./Badges/OpenS/OS-T4.png) |
 | **Required** | ❓ | ❓ | ❓ | ❓ |
 
@@ -443,7 +445,7 @@ Or with size control:
 <div align="center">
 
 | Resource | What It Gets You |
-|---|---|
+| --- | --- |
 | [GitHub Docs - Profile & Achievements](https://docs.github.com/en/account-and-profile) | The official word on everything profile-related |
 | [Schweinepriester's Achievement Tracker](https://github.com/Schweinepriester/github-profile-achievements) | The most detailed unofficial badge reference around |
 | [First Timers Only](https://www.firsttimersonly.com/) | A gentle on-ramp to your first PR |

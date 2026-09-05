@@ -15,8 +15,8 @@
 - [What Is an Organization, Actually?](#what-is-an-organization-actually)
 - [Organization vs Personal Account](#organization-vs-personal-account)
 - [Before You Create One](#before-you-create-one)
-  * [Picking a Name](#picking-a-name)
-  * [Picking a Plan](#picking-a-plan)
+  - [Picking a Name](#picking-a-name)
+  - [Picking a Plan](#picking-a-plan)
 - [Step-by-Step: Creating the Organization](#step-by-step-creating-the-organization)
 - [The First Week Checklist](#the-first-week-checklist)
 - [Obscure but Useful Facts](#obscure-but-useful-facts)
@@ -57,10 +57,10 @@ If more than one person needs to be able to approve pull requests, manage settin
 
 The org name becomes part of every URL under it, so it's worth a minute of thought:
 
-* Keep it short. `github.com/your-really-long-company-name-inc` is painful to type and paste.
-* Avoid trademarked names you don't have rights to. GitHub will take an org name down if there's a legitimate dispute.
-* Check if the name is already taken as a personal username too, since org names and usernames share the same namespace.
-* You can rename an org later, but old links (`github.com/oldname/repo`) will redirect only for a while, and some integrations break on rename. Get it right early if you can.
+- Keep it short. `github.com/your-really-long-company-name-inc` is painful to type and paste.
+- Avoid trademarked names you don't have rights to. GitHub will take an org name down if there's a legitimate dispute.
+- Check if the name is already taken as a personal username too, since org names and usernames share the same namespace.
+- You can rename an org later, but old links (`github.com/oldname/repo`) will redirect only for a while, and some integrations break on rename. Get it right early if you can.
 
 ### Picking a Plan
 
@@ -102,11 +102,11 @@ github.com/orgs/YOUR-ORG-NAME/dashboard
 
 Once the org exists, a few things are worth doing before you start adding a lot of people or repos:
 
-* **Set base permissions.** Under Settings → Member privileges, decide what a member can do by default (nothing, read, write, or admin on new repos). Most orgs should start this at "Read" or "No permission" and grant more per team.
-* **Turn on two-factor authentication requirement.** Settings → Authentication security lets you require every member to have 2FA enabled. This alone prevents a huge share of account-compromise incidents.
-* **Create your first team.** Even with three people, having a team called something like `core` makes it easier to manage permissions as a group instead of one by one.
-* **Add a `.github` repository.** A special repo named exactly `.github` lets you set org-wide defaults like issue templates and a community health file that applies to every repo that doesn't have its own. Covered in more depth in the info hub guide.
-* **Decide on repo visibility defaults.** Settings → Repository defaults controls whether new repos default to private or public. Get this right before someone accidentally creates a public repo with internal notes in it.
+- **Set base permissions.** Under Settings → Member privileges, decide what a member can do by default (nothing, read, write, or admin on new repos). Most orgs should start this at "Read" or "No permission" and grant more per team.
+- **Turn on two-factor authentication requirement.** Settings → Authentication security lets you require every member to have 2FA enabled. This alone prevents a huge share of account-compromise incidents.
+- **Create your first team.** Even with three people, having a team called something like `core` makes it easier to manage permissions as a group instead of one by one.
+- **Add a `.github` repository.** A special repo named exactly `.github` lets you set org-wide defaults like issue templates and a community health file that applies to every repo that doesn't have its own. Covered in more depth in the info hub guide.
+- **Decide on repo visibility defaults.** Settings → Repository defaults controls whether new repos default to private or public. Get this right before someone accidentally creates a public repo with internal notes in it.
 
 ---
 
@@ -114,12 +114,12 @@ Once the org exists, a few things are worth doing before you start adding a lot 
 
 A handful of things about org creation that don't come up until they matter:
 
-* **You can convert a personal account into an org**, but not the other way around. If you started a project on a personal account and it's grown too big to manage alone, GitHub support can walk you through migrating it, though the personal account effectively becomes read-only under the new setup and you'll want a fresh personal account for yourself afterward.
-* **An org can have zero repos and still be billed** if you have paid seats assigned. Seats are tied to members, not to repo count.
-* **The person who creates the org isn't locked in as the sole owner.** Ownership can be fully transferred, and the creator can later be demoted to a regular member or removed entirely, as long as at least one other owner exists.
-* **Org names are case-insensitive but case-preserving.** `github.com/MyOrg` and `github.com/myorg` point to the same place, but the org's display name keeps whatever casing you chose.
-* **There's a soft limit on how many organizations a single user can create in a short period.** This exists to slow down spam and abuse, and it occasionally trips up legitimate users setting up several client orgs in one sitting. If you hit it, waiting a day usually clears it.
-* **Verified domains aren't just a blue checkmark.** Once you verify a domain under Settings → Verified & approved domains, you can restrict organization membership visibility and even set default profile behavior for members with an email on that domain.
+- **You can convert a personal account into an org**, but not the other way around. If you started a project on a personal account and it's grown too big to manage alone, GitHub support can walk you through migrating it, though the personal account effectively becomes read-only under the new setup and you'll want a fresh personal account for yourself afterward.
+- **An org can have zero repos and still be billed** if you have paid seats assigned. Seats are tied to members, not to repo count.
+- **The person who creates the org isn't locked in as the sole owner.** Ownership can be fully transferred, and the creator can later be demoted to a regular member or removed entirely, as long as at least one other owner exists.
+- **Org names are case-insensitive but case-preserving.** `github.com/MyOrg` and `github.com/myorg` point to the same place, but the org's display name keeps whatever casing you chose.
+- **There's a soft limit on how many organizations a single user can create in a short period.** This exists to slow down spam and abuse, and it occasionally trips up legitimate users setting up several client orgs in one sitting. If you hit it, waiting a day usually clears it.
+- **Verified domains aren't just a blue checkmark.** Once you verify a domain under Settings → Verified & approved domains, you can restrict organization membership visibility and even set default profile behavior for members with an email on that domain.
 
 ---
 

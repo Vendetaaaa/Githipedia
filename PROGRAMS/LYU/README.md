@@ -23,7 +23,7 @@ lyu [--dir PATH] [--action auto|add|subtract] [--all] [--dry-run]
 ## Flags
 
 | Flag | Description | Default |
-|---|---|---|
+| --- | --- | --- |
 | `--dir` | Target directory | `.` |
 | `--action` | `auto` = current year, `add` = +1, `subtract` = -1 | `auto` |
 | `--all` | Scan subfolders with a `.git` folder as separate repos | off |

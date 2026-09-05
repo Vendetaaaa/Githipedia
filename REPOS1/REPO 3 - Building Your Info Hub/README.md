@@ -136,12 +136,12 @@ The `config.yml` file lets you disable blank issues entirely, forcing people to 
 
 ## Obscure but Useful Facts
 
-* **The org profile README only shows to logged-out visitors if the org itself is public**, but organization members always see it regardless. If your profile page "isn't working," check the org's own visibility settings first.
-* **The `.github` repo can itself be private**, but then its org-wide defaults (templates, contributing guide) only apply to other private repos in the org, not public ones. Public repos need the source repo to be public too for the fallback to apply.
-* **Org-wide community health files don't override a repo that already has one, even an empty one.** An empty `CONTRIBUTING.md` in a repo will "win" over the org default and show nothing, which confuses people who assumed deleting the content would fall back automatically.
-* **Discussions can be converted from issues and back isn't always clean.** Converting an issue into a discussion is one-way in most cases, so it's worth being deliberate about which repo has discussions enabled before people start filing things there.
-* **Pinned repos are a personal, page-wide setting controlled by whoever has admin rights**, not something each visitor customizes. Everyone who lands on your org page sees the same six pins.
-* **GitHub's org search indexing has a lag.** A new repo or a freshly written README might not show up in GitHub's search results immediately, so don't panic if something you just published seems to be "missing" for the first hour or so.
+- **The org profile README only shows to logged-out visitors if the org itself is public**, but organization members always see it regardless. If your profile page "isn't working," check the org's own visibility settings first.
+- **The `.github` repo can itself be private**, but then its org-wide defaults (templates, contributing guide) only apply to other private repos in the org, not public ones. Public repos need the source repo to be public too for the fallback to apply.
+- **Org-wide community health files don't override a repo that already has one, even an empty one.** An empty `CONTRIBUTING.md` in a repo will "win" over the org default and show nothing, which confuses people who assumed deleting the content would fall back automatically.
+- **Discussions can be converted from issues and back isn't always clean.** Converting an issue into a discussion is one-way in most cases, so it's worth being deliberate about which repo has discussions enabled before people start filing things there.
+- **Pinned repos are a personal, page-wide setting controlled by whoever has admin rights**, not something each visitor customizes. Everyone who lands on your org page sees the same six pins.
+- **GitHub's org search indexing has a lag.** A new repo or a freshly written README might not show up in GitHub's search results immediately, so don't panic if something you just published seems to be "missing" for the first hour or so.
 
 ---
 

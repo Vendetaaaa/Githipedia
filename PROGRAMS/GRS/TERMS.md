@@ -87,6 +87,7 @@ The User is responsible for:
 - Reviewing restored patches before applying them to critical branches.
 
 The Software employs the following security controls:
+
 - HMAC-SHA256 integrity verification on `storage.json`.
 - Input validation and path-traversal prevention on all user inputs.
 - Append-only audit logging of all CLI invocations.

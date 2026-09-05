@@ -134,7 +134,7 @@ Both of these let you authenticate with GitHub from your computer or from automa
 ### The Core Difference
 
 | | SSH Key | Personal Access Token (PAT) |
-|---|---|---|
+| --- | --- | --- |
 | What it looks like | A pair of files on your computer | A long string of characters |
 | How it works | Proves who you are using math, no password | Acts like a password you paste in |
 | Where it's used | Git operations (clone, push, pull) | Git operations and the GitHub API |
@@ -150,6 +150,7 @@ ssh-keygen -t ed25519 -C "your@email.com"
 ```
 
 Press Enter through the prompts. This creates two files in `~/.ssh/`:
+
 - `id_ed25519` , your private key. Never share this.
 - `id_ed25519.pub` , your public key. This is what you give to GitHub.
 
@@ -338,7 +339,7 @@ Code deploys to production
 ## Quick Reference
 
 | Task | Where to Do It |
-|---|---|
+| --- | --- |
 | Add a secret | Settings → Secrets and variables → Actions |
 | Generate an SSH key | Terminal: `ssh-keygen -t ed25519 -C "you@email.com"` |
 | Add SSH key to GitHub | Settings → SSH and GPG keys |
@@ -346,7 +347,6 @@ Code deploys to production
 | Turn on branch protection | Settings → Branches → Add rule |
 | Create a deployment environment | Settings → Environments → New environment |
 | Add an approval requirement | Inside the environment settings, under "Deployment protection rules" |
-
 
 ---
 

@@ -43,7 +43,7 @@ There are thousands of "awesome GitHub" lists floating around, and most of them 
 Everything you need to make your profile page look like it belongs to someone who ships.
 
 | # | Name | What It Does |
-|---|------|---------------|
+| --- | ------ | --------------- |
 | 1 | [github-readme-stats](https://github.com/anuraghazra/github-readme-stats) | Live stat cards for your profile : commits, stars, top languages |
 | 2 | [github-profile-trophy](https://github.com/ryo-ma/github-profile-trophy) | Trophy badges generated from your GitHub activity |
 | 3 | [readme-typing-svg](https://github.com/DenverCoder1/readme-typing-svg) | Animated typewriter-style text for your README |
@@ -62,7 +62,7 @@ Everything you need to make your profile page look like it belongs to someone wh
 Small images, big signal. These generate badges for literally anything.
 
 | # | Name | What It Does |
-|---|------|---------------|
+| --- | ------ | --------------- |
 | 11 | [Shields.io](https://shields.io) | The badge generator : build a badge for any label, stat, or tech |
 | 12 | [For The Badge](https://forthebadge.com) | Bold, chunky, tongue-in-cheek badge style |
 | 13 | [Badgen](https://badgen.net) | Fast, lightweight badge generator, alternative to Shields |
@@ -81,7 +81,7 @@ Small images, big signal. These generate badges for literally anything.
 The lists that spawn a thousand bookmarks.
 
 | # | Name | What It Does |
-|---|------|---------------|
+| --- | ------ | --------------- |
 | 21 | [Awesome](https://github.com/sindresorhus/awesome) | The original list of awesome lists : the root of it all |
 | 22 | [Awesome README](https://github.com/matiassingers/awesome-readme) | A curated list of genuinely great README examples |
 | 23 | [Awesome GitHub Profile READMEs](https://github.com/abhisheknaiidu/awesome-github-profile-readme) | Hundreds of real profile README examples to steal ideas from |
@@ -100,7 +100,7 @@ The lists that spawn a thousand bookmarks.
 Automate the boring parts so you don't have to think about them again.
 
 | # | Name | What It Does |
-|---|------|---------------|
+| --- | ------ | --------------- |
 | 31 | [GitHub Actions Marketplace](https://github.com/marketplace?type=actions) | Browse thousands of prebuilt actions |
 | 32 | [actions/checkout](https://github.com/actions/checkout) | The action that checks out your repo : used in almost every workflow |
 | 33 | [actions/setup-node](https://github.com/actions/setup-node) | Sets up a Node.js environment in your workflow |
@@ -119,7 +119,7 @@ Automate the boring parts so you don't have to think about them again.
 The tools that live outside the browser tab.
 
 | # | Name | What It Does |
-|---|------|---------------|
+| --- | ------ | --------------- |
 | 41 | [GitHub CLI](https://cli.github.com) | Manage issues, PRs, and repos straight from the terminal |
 | 42 | [GitHub Desktop](https://desktop.github.com) | A GUI client for people who'd rather click than type |
 | 43 | [Octokit](https://github.com/octokit) | The official set of GitHub API client libraries |
@@ -138,7 +138,7 @@ The tools that live outside the browser tab.
 Know what's broken before someone else finds it first.
 
 | # | Name | What It Does |
-|---|------|---------------|
+| --- | ------ | --------------- |
 | 51 | [GitHub Advisory Database](https://github.com/advisories) | Searchable database of known vulnerabilities in open-source packages |
 | 52 | [National Vulnerability Database](https://nvd.nist.gov) | The U.S. government's official CVE repository |
 | 53 | [GitHub Security Lab](https://securitylab.github.com) | Research, tools, and CTFs from GitHub's own security team |
@@ -157,7 +157,7 @@ Know what's broken before someone else finds it first.
 For when the concepts, not just the buttons, need to click.
 
 | # | Name | What It Does |
-|---|------|---------------|
+| --- | ------ | --------------- |
 | 61 | [Pro Git Book](https://git-scm.com/book) | The free, complete book on how Git actually works |
 | 62 | [GitHub Skills](https://skills.github.com) | Interactive courses taught inside real GitHub repos |
 | 63 | [GitHub Docs](https://docs.github.com) | The official documentation hub for everything GitHub |
@@ -173,11 +173,10 @@ For when the concepts, not just the buttons, need to click.
 
 ## 🏆 Achievements, Programs & Community
 
-
 The parts of GitHub that reward showing up.
 
 | # | Name | What It Does |
-|---|------|---------------|
+| --- | ------ | --------------- |
 | 71 | [GitHub Achievements Docs](https://docs.github.com/site-policy/github-terms/github-terms-of-service) | Official info on the badges that appear on your profile |
 | 72 | [GitHub Stars Program](https://stars.github.com) | Recognition program for top community contributors |
 | 73 | [GitHub Sponsors](https://github.com/sponsors) | Get funded directly for the open-source work you do |
@@ -193,11 +192,10 @@ The parts of GitHub that reward showing up.
 
 ## 📄 Templates, Licenses & Boilerplate
 
-
 Stop starting from a blank file.
 
 | # | Name | What It Does |
-|---|------|---------------|
+| --- | ------ | --------------- |
 | 81 | [Template Repositories Docs](https://docs.github.com/repositories/creating-and-managing-repositories/creating-a-template-repository) | How to turn any repo into a reusable template |
 | 82 | [Choose a License](https://choosealicense.com) | Plain-language help picking the right open-source license |
 | 83 | [github/gitignore](https://github.com/github/gitignore) | GitHub's official collection of `.gitignore` templates |
@@ -213,11 +211,10 @@ Stop starting from a blank file.
 
 ## 🔍 Discovery & Finding Projects
 
-
 For finding something to build, use, or contribute to.
 
 | # | Name | What It Does |
-|---|------|---------------|
+| --- | ------ | --------------- |
 | 91 | [GitHub Explore](https://github.com/explore) | GitHub's own discovery page for trending and recommended repos |
 | 92 | [GitHub Topics](https://github.com/topics) | Browse repos grouped by technology or subject |
 | 93 | [GitHub Marketplace](https://github.com/marketplace) | Apps and actions that plug directly into your workflow |

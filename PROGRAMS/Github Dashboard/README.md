@@ -73,19 +73,19 @@ Credentials are saved to `~/.github_widget_config.json` with `chmod 600` permiss
 4. Select these scopes:
 
 | Scope | Purpose |
-|---|---|
+| --- | --- |
 | `repo` | Read repository data |
 | `notifications` | Read unread notifications |
 | `read:user` | Read profile information |
 
-5. Click **Generate token** and copy it - you only see it once
+1. Click **Generate token** and copy it - you only see it once
 
 ---
 
 ## Keybinds
 
 | Key | Action |
-|---|---|
+| --- | --- |
 | `T` | Cycle theme (Cyberpunk → Matrix → Amber → Ice) |
 | `↓` or `J` | Scroll repositories down |
 | `↑` or `K` | Scroll repositories up |
@@ -97,7 +97,7 @@ Credentials are saved to `~/.github_widget_config.json` with `chmod 600` permiss
 ## Themes
 
 | Theme | Colors | Aesthetic |
-|---|---|---|
+| --- | --- | --- |
 | **Cyberpunk** | Cyan + Green + Yellow | Default neon hacker look |
 | **Matrix** | Green on black | Classic terminal green |
 | **Amber** | Yellow + Red | Retro phosphor monitor |
@@ -142,11 +142,13 @@ del %USERPROFILE%\.github_widget_config.json
 
 **`SyntaxError: illegal target for annotation` on Windows**
 The file downloaded as a 404 error page. Your repo is private - make it public or re-download after making it public, deleting the broken file first:
+
 ```powershell
 del "Github DashBoard.py"
 ```
 
 **`ModuleNotFoundError: No module named '_curses'` on Windows**
+
 ```powershell
 pip install windows-curses
 ```
@@ -174,11 +176,11 @@ By executing this Python script, you acknowledge that you are using this softwar
 2. Data Collection Policy
 Local Storage Only: Your GitHub Personal Access Token and Username are stored purely locally on your machine inside the configuration file (~/.github_widget_config.json).
 
-Zero Third-Party Transmission: This script communicates exclusively with the official secure GitHub API (https://api.github.com). No telemetry, analytics, or user data are tracked, stored, or transmitted to any external servers or third parties.
+Zero Third-Party Transmission: This script communicates exclusively with the official secure GitHub API (<https://api.github.com>). No telemetry, analytics, or user data are tracked, stored, or transmitted to any external servers or third parties.
 
 No Caching: Data pulled from the GitHub API is processed entirely in volatile system memory (RAM) to render the dashboard interface and is discarded when the application closes or refreshes.
 
-3. Security Responsibilities
+1. Security Responsibilities
 You are solely responsible for safeguarding your GitHub Personal Access Token.
 
 Do not share your local config file. It is recommended to keep standard OS user account restrictions active to prevent unauthorized local reading of the storage file.

@@ -118,7 +118,7 @@ If something feels off in the first five seconds, people leave. A beautiful READ
 ## The 9 Elements
 
 | # | Element | Impact | Time | Difficulty |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | 1 | 🖼️ Avatar & Identity | High | 5 min | Trivial |
 | 2 | 🎯 Bio | High | 10 min | Trivial |
 | 3 | 📌 Pinned Repos | High | 30 min | Easy |
@@ -140,7 +140,7 @@ The first thing anyone sees. It sets the tone before they've read a single word.
 **What works:**
 
 | ✅ Good | ❌ Bad |
-|---|---|
+| --- | --- |
 | Clear face photo, decent lighting | Default gray GitHub identicon |
 | Consistent illustrated avatar | Blurry, dark, or heavily cropped |
 | Same image across LinkedIn and GitHub | Random meme or in-joke |
@@ -315,7 +315,7 @@ One honest caveat: stats cards measure quantity, not quality. "Mostly HTML" migh
 **Style comparison:**
 
 | Style | Best for |
-|---|---|
+| --- | --- |
 | `flat-square` | Clean, modern - best for tech stacks |
 | `for-the-badge` | Bold - good for social/contact links |
 | `flat` | Slightly rounded, classic |
@@ -498,7 +498,7 @@ You're not just showing work here. You're showing how you think. That's what att
 ## The Full Toolkit
 
 | Tool | What It Does | Priority |
-|---|---|---|
+| --- | --- | --- |
 | [github-readme-stats](https://github.com/anuraghazra/github-readme-stats) | Dynamic stat cards - stars, commits, languages | ⭐ Essential |
 | [Shields.io](https://shields.io) | Custom badges for any tech or label | ⭐ Essential |
 | [Simple Icons](https://simpleicons.org) | 3000+ brand logos as free SVGs | ⭐ Essential |
@@ -515,7 +515,7 @@ You're not just showing work here. You're showing how you think. That's what att
 ## Things That Actually Kill Profiles
 
 | Mistake | Why It Hurts | The Fix |
-|---|---|---|
+| --- | --- | --- |
 | Empty bio | Missed first impression in under a second | One sentence, the formula above |
 | Pinned "test" or "untitled" repos | Signals you don't care about your own work | Delete or unpin them right now |
 | Forked repos you never contributed to | Looks like padding | Only pin original or meaningful work |

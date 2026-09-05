@@ -131,7 +131,7 @@ steps:
 A runner is the virtual machine that actually executes your job. GitHub provides hosted runners running Ubuntu, Windows, and macOS. They're fresh machines spun up for each job and thrown away when it's done.
 
 | Runner | Label |
-|---|---|
+| --- | --- |
 | Ubuntu (latest) | `ubuntu-latest` |
 | Ubuntu 22.04 | `ubuntu-22.04` |
 | Windows (latest) | `windows-latest` |
@@ -412,7 +412,7 @@ Steps share the filesystem within a job. If step 1 creates a file, step 2 can re
 GitHub maintains a set of official actions under the `actions/` namespace. These are the ones you'll use in almost every workflow.
 
 | Action | What it does |
-|---|---|
+| --- | --- |
 | `actions/checkout@v4` | Checks out your repository code |
 | `actions/setup-node@v4` | Installs a specific version of Node.js |
 | `actions/setup-python@v5` | Installs a specific version of Python |
@@ -558,7 +558,7 @@ ${{ startsWith(github.ref, 'refs/tags/') }}
 Contexts available:
 
 | Context | What it contains |
-|---|---|
+| --- | --- |
 | `github` | Event payload, repo info, actor, ref |
 | `env` | Environment variables |
 | `vars` | Repository/org variables (non-secret) |
@@ -601,7 +601,7 @@ steps:
 Status functions:
 
 | Function | When it's true |
-|---|---|
+| --- | --- |
 | `success()` | All previous steps succeeded |
 | `failure()` | Any previous step failed |
 | `cancelled()` | The workflow was cancelled |
@@ -975,7 +975,7 @@ jobs:
 Available permission scopes:
 
 | Scope | What it controls |
-|---|---|
+| --- | --- |
 | `actions` | Manage workflow runs |
 | `checks` | Create check runs |
 | `contents` | Read/write repo contents |
@@ -1088,7 +1088,7 @@ Everything is free on public repos. Unlimited minutes, unlimited storage for art
 **Free tier (private repos):**
 
 | Plan | Minutes/month | Storage |
-|---|---|---|
+| --- | --- | --- |
 | Free | 2,000 | 500 MB |
 | Pro | 3,000 | 1 GB |
 | Team | 3,000 | 2 GB |
@@ -1097,7 +1097,7 @@ Everything is free on public repos. Unlimited minutes, unlimited storage for art
 Minutes are multiplied based on runner type:
 
 | Runner | Multiplier |
-|---|---|
+| --- | --- |
 | Linux | 1x |
 | Windows | 2x |
 | macOS | 10x |
@@ -1123,7 +1123,7 @@ Concurrent jobs:         varies by plan (20 for free, up to 500 for enterprise)
 <div align="center">
 
 | Resource | What It Gets You |
-|---|---|
+| --- | --- |
 | [GitHub Actions Docs](https://docs.github.com/en/actions) | The official reference, actually pretty good |
 | [Workflow Syntax Reference](https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions) | Every single YAML key explained |
 | [GitHub Marketplace - Actions](https://github.com/marketplace?type=actions) | Thousands of community actions |

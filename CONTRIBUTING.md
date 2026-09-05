@@ -132,6 +132,7 @@ To keep quality high across the board:
 Not ready to write a fix yourself? That is completely fine.
 
 [Open an issue](https://github.com/Vendetaaaa/Githipedia/issues/new) and describe:
+
 - What is wrong or missing
 - Where it is (link to the file or section)
 - What it should say instead (if you know)

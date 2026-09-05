@@ -108,7 +108,7 @@ GHSA IDs are assigned the moment an advisory is created or imported. They're per
 CVSS (**Common Vulnerability Scoring System**) rates how serious a vulnerability is, on a scale from 0 to 10. The database supports both CVSS v3.1 and the newer v4.0.
 
 | Severity | CVSS Score | What it actually means |
-|---|---|---|
+| --- | --- | --- |
 | 🟤 **Low** | 0.1-3.9 | Hard to exploit, limited impact, unusual conditions required |
 | 🟡 **Medium** | 4.0-6.9 | Real risk, but usually needs specific conditions |
 | 🟠 **High** | 7.0-8.9 | Serious, relatively easy to exploit. Patch soon |
@@ -204,7 +204,7 @@ GitHub being a CNA means it can assign CVE IDs directly for vulnerabilities in o
 A GitHub-reviewed advisory is only possible for packages in a supported ecosystem:
 
 | Ecosystem | Registry | Language(s) |
-|---|---|---|
+| --- | --- | --- |
 | `npm` | npmjs.com | JavaScript / TypeScript |
 | `pip` | pypi.org | Python |
 | `maven` | search.maven.org | Java / Kotlin |
@@ -247,7 +247,7 @@ Last modified   →  when last updated
 The **CWE ID** is useful when you want to understand *what kind* of vulnerability you're dealing with:
 
 | CWE | What it means |
-|---|---|
+| --- | --- |
 | CWE-79 | Cross-site scripting (XSS) |
 | CWE-89 | SQL injection |
 | CWE-22 | Path traversal |
@@ -402,7 +402,7 @@ Because they haven't been validated. They come straight from the NVD feed and ma
 ## Useful Links
 
 | Resource | What It Is |
-|---|---|
+| --- | --- |
 | [github.com/advisories](https://github.com/advisories) | Browse and search the live database |
 | [github/advisory-database](https://github.com/github/advisory-database) | The raw database repo - all OSV JSON files |
 | [GitHub Docs - Advisory Database](https://docs.github.com/en/code-security/security-advisories/working-with-global-security-advisories-from-the-github-advisory-database/about-the-github-advisory-database) | Official documentation |

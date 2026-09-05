@@ -1,4 +1,4 @@
-# The full story of GitHub, from a San Francisco apartment to 150 million developers.
+# The full story of GitHub, from a San Francisco apartment to 150 million developers
 
 ---
 
@@ -74,7 +74,7 @@ The original offer was simple: free for public repositories, paid for private on
 Growth in the early years was quiet but surprisingly consistent. The Ruby and JavaScript communities adopted GitHub first, and the network effects kicked in fast. The more developers were on GitHub, the more reason there was for other developers to show up too.
 
 | Year | Milestone |
-|------|-----------|
+| ------ | ----------- |
 | 2009 | 100,000 registered users |
 | 2010 | 1,000,000 repositories hosted |
 | 2011 | GitHub surpasses SourceForge and Google Code in total commits |
@@ -190,7 +190,7 @@ The acquisitions of earlier years have been folded into the platform in ways tha
 ## Key Numbers at a Glance
 
 | Metric | Number |
-|--------|--------|
+| -------- | -------- |
 | Year founded | 2008 |
 | Microsoft acquisition price | $7.5 billion |
 | Registered developers in 2025 | 150 million+ |
@@ -203,7 +203,7 @@ The acquisitions of earlier years have been folded into the platform in ways tha
 ## The Founders
 
 | Person | Role | Known For |
-|--------|------|-----------|
+| -------- | ------ | ----------- |
 | Tom Preston-Werner | Co-founder | Initial architecture, created Semantic Versioning and Jekyll |
 | Chris Wanstrath | Co-founder and CEO | Led GitHub through most of its independent years |
 | P.J. Hyett | Co-founder | Early product and business direction |
@@ -216,7 +216,7 @@ The acquisitions of earlier years have been folded into the platform in ways tha
 ## Notable Acquisitions and Products
 
 | Year | Product or Company | What It Added |
-|------|-------------------|---------------|
+| ------ | ------------------- | --------------- |
 | 2016 | GitHub Pages expands | Free static site hosting for any public repository |
 | 2018 | GitHub Actions launches | Native automation and CI/CD built directly into the platform |
 | 2019 | Semmle | Code analysis and security scanning, which became CodeQL |
@@ -232,7 +232,7 @@ The acquisitions of earlier years have been folded into the platform in ways tha
 GitHub was not the only option. It competed with several serious challengers and outlasted most of them.
 
 | Platform | Launched | Owned By | What Made It Different |
-|----------|----------|----------|------------------------|
+| ---------- | ---------- | ---------- | ------------------------ |
 | GitHub | 2008 | Microsoft | Largest community, Copilot, Actions |
 | Bitbucket | 2008 | Atlassian | Deep Jira integration, early free private repos |
 | GitLab | 2011 | GitLab Inc. | Self-hostable, full DevOps platform in one product |

@@ -57,7 +57,7 @@ grs ui
 ## Commands
 
 | Command | What it does |
-|---|---|
+| --- | --- |
 | `grs save "description"` | Snapshot current branch, changes, and open files |
 | `grs list` | List all snapshots for the current repo |
 | `grs restore <id>` | Restore by ID prefix or description substring |
@@ -104,7 +104,7 @@ Everything lives on your machine only. Nothing is ever sent anywhere.
 ## Security
 
 | Control | Detail |
-|---|---|
+| --- | --- |
 | **HMAC integrity** | `storage.json` is signed on every write, verified on every read |
 | **No shell injection** | All Git operations use native libgit2 — `git.exe` is never spawned |
 | **Path validation** | All paths checked for traversal sequences (`..`) before use |
@@ -119,7 +119,7 @@ Everything lives on your machine only. Nothing is ever sent anywhere.
 ## Editor Support
 
 | Editor | Status |
-|---|---|
+| --- | --- |
 | VS Code | ✅ Supported |
 | VS Codium | ✅ Supported |
 | VS Code Insiders | ✅ Supported |

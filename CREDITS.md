@@ -30,8 +30,9 @@ These are the people who have opened pull requests, fixed mistakes, added guides
 |------|--------|-----------------------|
 | - | - | - |
 
-> ### If you have contributed and are not listed here, contact the founder via email or github, this is **NOT** made for pull requests / suggestions / issues etc.
-> #### Also take into consideration only those who make honorable fixes and modifications etc., based on loyalty.
+> ### If you have contributed and are not listed here, contact the founder via email or github, this is **NOT** made for pull requests / suggestions / issues etc
+>
+> #### Also take into consideration only those who make honorable fixes and modifications etc., based on loyalty
 
 ---
 

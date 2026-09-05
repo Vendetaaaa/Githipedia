@@ -14,8 +14,8 @@
 
 - [Roles, Explained Properly](#roles-explained-properly)
 - [Teams and Why You Should Use Them](#teams-and-why-you-should-use-them)
-  * [Setting Up a Team Structure](#setting-up-a-team-structure)
-  * [Nested Teams](#nested-teams)
+  - [Setting Up a Team Structure](#setting-up-a-team-structure)
+  - [Nested Teams](#nested-teams)
 - [Permissions Without the Headache](#permissions-without-the-headache)
 - [Security Basics Every Org Needs](#security-basics-every-org-needs)
 - [Billing and Seats](#billing-and-seats)
@@ -84,11 +84,11 @@ Someone on `backend` is automatically treated as part of `engineering` for any p
 
 GitHub's permission levels, from least to most access, are: **Read, Triage, Write, Maintain, Admin**. A quick way to think about each:
 
-* **Read** — can view and clone, open issues, comment. Nothing else.
-* **Triage** — Read, plus can manage issues and PRs (labels, assignees) without merging code.
-* **Write** — Triage, plus can push code and merge PRs.
-* **Maintain** — Write, plus can manage some repo settings, like protecting branches, without touching sensitive things like deleting the repo.
-* **Admin** — full control of the repo, including deleting it and changing who has access.
+- **Read** — can view and clone, open issues, comment. Nothing else.
+- **Triage** — Read, plus can manage issues and PRs (labels, assignees) without merging code.
+- **Write** — Triage, plus can push code and merge PRs.
+- **Maintain** — Write, plus can manage some repo settings, like protecting branches, without touching sensitive things like deleting the repo.
+- **Admin** — full control of the repo, including deleting it and changing who has access.
 
 A good rule most orgs land on eventually: default new members to no access or read-only, and grant Write or higher only through team membership tied to what they're actually working on. This keeps the blast radius small if an account gets compromised.
 
@@ -96,11 +96,11 @@ A good rule most orgs land on eventually: default new members to no access or re
 
 ## Security Basics Every Org Needs
 
-* **Require two-factor authentication.** This is Settings → Authentication security. If someone doesn't have 2FA on, they get removed from the org until they set it up. It sounds harsh, it isn't.
-* **Turn on Dependabot alerts org-wide.** Settings → Code security lets you enable this as a default for every repo, so nobody has to remember to turn it on manually per project.
-* **Set up branch protection on default branches.** At minimum, require a pull request before merging to `main`, and require at least one review on anything shared by more than one person.
-* **Review the audit log periodically.** Settings → Audit log shows every meaningful action taken in the org: permission changes, new SSH keys, repo deletions. On paid plans this can be streamed to external tools for long-term retention.
-* **Use SAML SSO if you're on Enterprise.** It ties org access directly to your company's identity provider, so removing someone from your company directory automatically cuts their GitHub access too.
+- **Require two-factor authentication.** This is Settings → Authentication security. If someone doesn't have 2FA on, they get removed from the org until they set it up. It sounds harsh, it isn't.
+- **Turn on Dependabot alerts org-wide.** Settings → Code security lets you enable this as a default for every repo, so nobody has to remember to turn it on manually per project.
+- **Set up branch protection on default branches.** At minimum, require a pull request before merging to `main`, and require at least one review on anything shared by more than one person.
+- **Review the audit log periodically.** Settings → Audit log shows every meaningful action taken in the org: permission changes, new SSH keys, repo deletions. On paid plans this can be streamed to external tools for long-term retention.
+- **Use SAML SSO if you're on Enterprise.** It ties org access directly to your company's identity provider, so removing someone from your company directory automatically cuts their GitHub access too.
 
 ---
 
@@ -108,9 +108,9 @@ A good rule most orgs land on eventually: default new members to no access or re
 
 Paid orgs are billed per seat, where a seat is one member with paid-plan access. A few things that trip people up:
 
-* Removing a member frees up their seat, but the change to your bill usually reflects on the next billing cycle, not instantly.
-* Outside collaborators (people added to a single repo, not the whole org) can sometimes still count as billable depending on the plan, so check before assuming a "guest" is free.
-* Billing managers can see and manage the invoice without being able to see any actual code, which is worth using if finance needs visibility but shouldn't have repo access.
+- Removing a member frees up their seat, but the change to your bill usually reflects on the next billing cycle, not instantly.
+- Outside collaborators (people added to a single repo, not the whole org) can sometimes still count as billable depending on the plan, so check before assuming a "guest" is free.
+- Billing managers can see and manage the invoice without being able to see any actual code, which is worth using if finance needs visibility but shouldn't have repo access.
 
 ---
 
@@ -130,12 +130,12 @@ When someone leaves, removing their org access is not the same as revoking every
 
 ## Obscure but Useful Facts
 
-* **Deleted teams don't delete history.** If you delete a team, past permission grants tied to it in the audit log stay intact, so you can still trace who had access to what and when.
-* **A member can belong to an organization without being visible on the public member list**, depending on their own privacy setting for that org. This means "who's in this org" as seen from outside isn't always the full picture.
-* **Org-level secrets exist separately from repo-level secrets**, and can be scoped to specific repos within the org. This is useful for shared API keys used by multiple projects, without copying the same secret into every repo's settings.
-* **You can restrict who's allowed to create repositories at all**, down to specific teams, which is easy to miss since it's tucked away in Member privileges rather than in the repo settings themselves.
-* **IP allow lists exist on Enterprise plans** and can block API and git access entirely from outside approved network ranges, independent of any individual user's login credentials.
-* **Renaming a team doesn't break its `@org/team-name` mentions immediately**, GitHub keeps a redirect for a while, but old automation that hardcodes the slug can eventually stop resolving once the redirect expires.
+- **Deleted teams don't delete history.** If you delete a team, past permission grants tied to it in the audit log stay intact, so you can still trace who had access to what and when.
+- **A member can belong to an organization without being visible on the public member list**, depending on their own privacy setting for that org. This means "who's in this org" as seen from outside isn't always the full picture.
+- **Org-level secrets exist separately from repo-level secrets**, and can be scoped to specific repos within the org. This is useful for shared API keys used by multiple projects, without copying the same secret into every repo's settings.
+- **You can restrict who's allowed to create repositories at all**, down to specific teams, which is easy to miss since it's tucked away in Member privileges rather than in the repo settings themselves.
+- **IP allow lists exist on Enterprise plans** and can block API and git access entirely from outside approved network ranges, independent of any individual user's login credentials.
+- **Renaming a team doesn't break its `@org/team-name` mentions immediately**, GitHub keeps a redirect for a while, but old automation that hardcodes the slug can eventually stop resolving once the redirect expires.
 
 ---
 

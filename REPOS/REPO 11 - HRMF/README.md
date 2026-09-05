@@ -16,20 +16,20 @@
 - [Why Should You Care?](#why-should-you-care)
 - [How Git Actually Stores Things](#how-git-actually-stores-things)
 - [The Three Safety Nets](#the-three-safety-nets)
-  * [🔄 What is the Reflog?](#-what-is-the-reflog)
-  * [🌱 What are Dangling Commits?](#-what-are-dangling-commits)
-  * [🗑️ What is the Garbage Collector?](#️-what-is-the-garbage-collector)
+  - [🔄 What is the Reflog?](#-what-is-the-reflog)
+  - [🌱 What are Dangling Commits?](#-what-are-dangling-commits)
+  - [🗑️ What is the Garbage Collector?](#️-what-is-the-garbage-collector)
 - [Fixing Mistakes  A Field Guide](#fixing-mistakes--a-field-guide)
-  * [😬 "I committed to the wrong branch"](#-i-committed-to-the-wrong-branch)
-  * [✍️ "I need to change my last commit message"](#️-i-need-to-change-my-last-commit-message)
-  * [📦 "I forgot to add a file to my last commit"](#-i-forgot-to-add-a-file-to-my-last-commit)
-  * [⏪ "I want to undo my last commit but keep the changes"](#-i-want-to-undo-my-last-commit-but-keep-the-changes)
-  * [💣 "I want to undo my last commit and discard the changes"](#-i-want-to-undo-my-last-commit-and-discard-the-changes)
-  * [😱 "I ran a hard reset and lost commits"](#-i-ran-a-hard-reset-and-lost-commits)
-  * [🌪️ "I force-pushed and broke a shared branch"](#️-i-force-pushed-and-broke-a-shared-branch)
-  * [🗑️ "I deleted a branch by mistake"](#️-i-deleted-a-branch-by-mistake)
-  * [🔥 "I committed a secret or sensitive file"](#-i-committed-a-secret-or-sensitive-file)
-  * [🌀 "My merge/rebase is a disaster"](#-my-mergerebase-is-a-disaster)
+  - [😬 "I committed to the wrong branch"](#-i-committed-to-the-wrong-branch)
+  - [✍️ "I need to change my last commit message"](#️-i-need-to-change-my-last-commit-message)
+  - [📦 "I forgot to add a file to my last commit"](#-i-forgot-to-add-a-file-to-my-last-commit)
+  - [⏪ "I want to undo my last commit but keep the changes"](#-i-want-to-undo-my-last-commit-but-keep-the-changes)
+  - [💣 "I want to undo my last commit and discard the changes"](#-i-want-to-undo-my-last-commit-and-discard-the-changes)
+  - [😱 "I ran a hard reset and lost commits"](#-i-ran-a-hard-reset-and-lost-commits)
+  - [🌪️ "I force-pushed and broke a shared branch"](#️-i-force-pushed-and-broke-a-shared-branch)
+  - [🗑️ "I deleted a branch by mistake"](#️-i-deleted-a-branch-by-mistake)
+  - [🔥 "I committed a secret or sensitive file"](#-i-committed-a-secret-or-sensitive-file)
+  - [🌀 "My merge/rebase is a disaster"](#-my-mergerebase-is-a-disaster)
 - [`reset` vs `revert` vs `checkout` vs `restore`](#reset-vs-revert-vs-checkout-vs-restore)
 - [Good Hygiene Habits](#good-hygiene-habits)
 - [Useful Aliases for Your `.gitconfig`](#useful-aliases-for-your-gitconfig)
@@ -223,6 +223,7 @@ This is the move when the commit itself was wrong (bad message, wrong split, mis
 git reset --hard HEAD~1
 
 ```
+
 > This deletes uncommitted changes to tracked files permanently  they are not staged anywhere and the reflog cannot bring back data that was never committed. Double-check `git status` and `git diff` before running this.
 
 ### 😱 "I ran a hard reset and lost commits"
@@ -250,6 +251,7 @@ Step 3 → git push --force-with-lease origin branch-name  (restoring the good s
 Step 4 → Tell everyone on the branch to run: git fetch && git reset --hard origin/branch-name
 
 ```
+
 > `--force-with-lease` instead of `--force` is the actual hygiene habit here  it refuses to push if someone else has added commits you haven't seen, instead of blindly overwriting them.
 
 ### 🗑️ "I deleted a branch by mistake"
@@ -273,6 +275,7 @@ Not pushed yet  →  git reset --soft HEAD~1, remove the file, recommit
 Already pushed  →  rotate/revoke the secret FIRST, then clean history
 
 ```
+
 > Removing a secret from history does not undo the exposure if it's already been pushed  assume it's compromised and rotate it immediately. History rewriting only prevents *future* exposure, and tools like `git filter-repo` or BFG Repo-Cleaner are built for this rather than plain `rebase`.
 
 ### 🌀 "My merge/rebase is a disaster"

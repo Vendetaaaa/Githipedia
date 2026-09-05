@@ -10,28 +10,28 @@
 
 - [The Problem With Using GitHub in a Browser](#the-problem-with-using-github-in-a-browser)
 - [Core Concepts You Need First](#core-concepts-you-need-first)
-  * [What is a CLI?](#-what-is-a-cli)
-  * [What is gh?](#-what-is-gh)
-  * [How gh Differs From git](#-how-gh-differs-from-git)
-  * [What is Authentication?](#-what-is-authentication)
+  - [What is a CLI?](#-what-is-a-cli)
+  - [What is gh?](#-what-is-gh)
+  - [How gh Differs From git](#-how-gh-differs-from-git)
+  - [What is Authentication?](#-what-is-authentication)
 - [Installation](#installation)
-  * [Windows](#-windows)
-  * [macOS](#-macos)
-  * [Linux](#-linux)
+  - [Windows](#-windows)
+  - [macOS](#-macos)
+  - [Linux](#-linux)
 - [Authentication - Connecting gh to Your Account](#authentication--connecting-gh-to-your-account)
 - [The Command Structure](#the-command-structure)
 - [The Commands](#the-commands)
-  * [Quick Overview Table](#quick-overview-table)
-  * [📁 gh repo - Repository Management](#-gh-repo--repository-management)
-  * [🔀 gh pr - Pull Requests](#-gh-pr--pull-requests)
-  * [🐛 gh issue - Issues](#-gh-issue--issues)
-  * [⚙️ gh workflow & gh run - GitHub Actions](#️-gh-workflow--gh-run--github-actions)
-  * [🔔 gh notify - Notifications](#-gh-notify--notifications)
-  * [🔑 gh secret - Secrets Management](#-gh-secret--secrets-management)
-  * [🌐 gh gist - Gists](#-gh-gist--gists)
-  * [🔍 gh search - Search GitHub](#-gh-search--search-github)
-  * [🔗 gh alias - Custom Shortcuts](#-gh-alias--custom-shortcuts)
-  * [🧩 gh extension - Extending gh](#-gh-extension--extending-gh)
+  - [Quick Overview Table](#quick-overview-table)
+  - [📁 gh repo - Repository Management](#-gh-repo--repository-management)
+  - [🔀 gh pr - Pull Requests](#-gh-pr--pull-requests)
+  - [🐛 gh issue - Issues](#-gh-issue--issues)
+  - [⚙️ gh workflow & gh run - GitHub Actions](#️-gh-workflow--gh-run--github-actions)
+  - [🔔 gh notify - Notifications](#-gh-notify--notifications)
+  - [🔑 gh secret - Secrets Management](#-gh-secret--secrets-management)
+  - [🌐 gh gist - Gists](#-gh-gist--gists)
+  - [🔍 gh search - Search GitHub](#-gh-search--search-github)
+  - [🔗 gh alias - Custom Shortcuts](#-gh-alias--custom-shortcuts)
+  - [🧩 gh extension - Extending gh](#-gh-extension--extending-gh)
 - [Combining gh With Other Tools](#combining-gh-with-other-tools)
 - [Real Workflows You Can Steal](#real-workflows-you-can-steal)
 - [The Full Command Reference](#the-full-command-reference)
@@ -130,11 +130,13 @@ Before `gh` can talk to GitHub on your behalf, it needs to prove you are who you
 ### 🪟 Windows
 
 **Option 1 - winget (recommended):**
+
 ```bash
 winget install --id GitHub.cli
 ```
 
 **Option 2 - Scoop:**
+
 ```bash
 scoop install gh
 ```
@@ -145,11 +147,13 @@ Download directly from [cli.github.com](https://cli.github.com) - no package man
 ### 🍎 macOS
 
 **Homebrew (recommended):**
+
 ```bash
 brew install gh
 ```
 
 **MacPorts:**
+
 ```bash
 sudo port install gh
 ```
@@ -157,6 +161,7 @@ sudo port install gh
 ### 🐧 Linux
 
 **Debian / Ubuntu:**
+
 ```bash
 (type -p wget >/dev/null || (sudo apt update && sudo apt-get install wget -y)) \
 && sudo mkdir -p -m 755 /etc/apt/keyrings \
@@ -170,6 +175,7 @@ sudo port install gh
 ```
 
 **Fedora / RHEL:**
+
 ```bash
 sudo dnf install 'dnf-command(config-manager)'
 sudo dnf config-manager --add-repo https://cli.github.com/packages/rpm/gh-cli.repo
@@ -177,6 +183,7 @@ sudo dnf install gh --repo gh-cli
 ```
 
 **Verify the installation worked:**
+
 ```bash
 gh --version
 # → gh version 2.x.x (yyyy-mm-dd)
@@ -213,12 +220,14 @@ You'll be guided through a short interactive flow:
 Select **Login with a web browser** - `gh` opens your browser, you approve, done. The token is stored securely in your system's credential store.
 
 **Verify it worked:**
+
 ```bash
 gh auth status
 # → ✓ Logged in to github.com as YOUR-USERNAME
 ```
 
 **Switching between accounts:**
+
 ```bash
 gh auth login --hostname github.com   # add another account
 gh auth switch                        # switch between them
@@ -244,6 +253,7 @@ gh  [topic]  [action]  [target]  [flags]
 ```
 
 **Examples:**
+
 ```bash
 gh  repo    create   my-project  --public
 gh  pr      merge    42          --squash
@@ -262,7 +272,7 @@ Once this pattern clicks, you can guess most commands before looking them up. Th
 ### Quick Overview Table
 
 | Topic | What It Does | Key Commands |
-|---|---|---|
+| --- | --- | --- |
 | `gh repo` | Create, clone, fork, view repos | `create` `clone` `fork` `view` |
 | `gh pr` | Full pull request lifecycle | `create` `list` `merge` `review` |
 | `gh issue` | Create and manage issues | `create` `list` `close` `comment` |
@@ -364,6 +374,7 @@ gh pr create --web
 ```
 
 When you run `gh pr create`, `gh` automatically:
+
 - Detects your current branch
 - Pushes it if it hasn't been pushed yet
 - Pre-fills the title from your last commit message
@@ -742,7 +753,7 @@ gh ext remove dlvhdr/gh-dash
 **Top extensions worth installing:**
 
 | Extension | What It Does |
-|---|---|
+| --- | --- |
 | `dlvhdr/gh-dash` | Full TUI dashboard - PRs, issues, and workflows in one view |
 | `github/gh-copilot` | Ask Copilot for command suggestions from the terminal |
 | `meiji163/gh-notify` | Better notification handling with filters |
@@ -858,7 +869,7 @@ gh pr checks --watch   # stream live CI status for the current branch's PR
   <summary>Press here to look:</summary>
 
 | Command | Description |
-|---|---|
+| --- | --- |
 | `gh auth login` | Authenticate with GitHub |
 | `gh auth logout` | Remove stored credentials |
 | `gh auth status` | Show current auth state |
@@ -941,7 +952,7 @@ gh pr checks --watch   # stream live CI status for the current branch's PR
 ## Resources & Further Reading
 
 | Resource | What It Gets You |
-|---|---|
+| --- | --- |
 | [cli.github.com](https://cli.github.com) | Official site - installation and overview |
 | [cli.github.com/manual](https://cli.github.com/manual) | The complete command reference |
 | [github.com/cli/cli](https://github.com/cli/cli) | The open-source repo - report bugs, follow development |
@@ -961,6 +972,7 @@ MIT License - fork it, adapt it, translate it, share it freely.
 Stop clicking.
 Start shipping.
 ```
+
 <div align="center">
 
 <img src="https://capsule-render.vercel.app/api?type=blur&color=7F1D1D&height=160&section=footer&text=More%20guides%20coming%20soon.&fontSize=28&fontColor=FCA5A5&fontAlignY=65" width="100%" />
