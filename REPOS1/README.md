@@ -22,7 +22,7 @@ That's what this is for. Three guides, each one picking up where the last leaves
 | 🧭 | [**Maintaining and Managing**](REPO%202%20-%20Maintaining%20and%20Managing) | Teams, roles, permissions, security defaults, billing, and keeping the thing healthy long term |
 | 📚 | [**Building Your Info Hub**](REPO%203%20-%20Building%20Your%20Info%20Hub) | Turning your org into a place people actually go to for information, profile READMEs, Discussions, wikis, pinned repos |
 
-> #### If there's a corner of this you think is missing, open an issue
+> ### If there's a corner of this you think is missing, open an issue
 
 ---
 

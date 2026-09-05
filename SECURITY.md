@@ -1,9 +1,7 @@
 ![Security Banner](https://capsule-render.vercel.app/api?type=blur&height=200&color=B91C1C&text=Security+Policy&section=header&fontColor=FCA5A5&fontSize=42&fontAlignY=50&desc=How+to+report+security+concerns+in+Githipedia.&descAlignY=70&descSize=16)
 
 > Githipedia is a documentation repository, not an application.
-
 > There is no backend, no user data, and no authentication system.
-
 > That said, security still matters here, and this page explains how.
 
 ---

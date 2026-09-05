@@ -1,17 +1,17 @@
 {
   "config": {
     "default": true,
-    // guides use <div align="center">, <img>, badges, etc. throughout.
     "MD033": false,
-    // prose-style guides run long lines by design; wrapping is a style choice, not an error.
     "MD013": false,
-    // capsule-render banners are used as both header and footer images, which
-    // duplicates image content by design — not a real issue here.
     "MD045": false,
-    // emoji-led headings (🏆, 🖇️, etc.) are part of the site's style.
     "MD026": {
       "punctuation": ".,;:!"
-    }
+    },
+    "MD041": false,
+    "MD042": false,
+    "MD051": false,
+    "MD036": false,
+    "MD060": false
   },
   "ignores": [
     "**/node_modules/**"

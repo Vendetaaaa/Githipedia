@@ -768,7 +768,7 @@ gh ext remove dlvhdr/gh-dash
 
 `gh` shines brightest when it's part of a pipeline rather than a standalone command.
 
-#### JSON output for scripting
+### JSON output for scripting
 
 Almost every `gh` command supports `--json` followed by field names, plus `--jq` for inline filtering:
 
@@ -786,7 +786,7 @@ gh pr list --author @me --json id --jq 'length'
 gh run list --status failure --json databaseId --jq '.[0].databaseId'
 ```
 
-#### Combining with fzf (fuzzy finder)
+### Combining with fzf (fuzzy finder)
 
 ```bash
 # Interactively pick a PR to check out
@@ -816,7 +816,7 @@ gh run view --web       # open workflow run in browser
 
 These are complete, copy-paste-ready workflows for common tasks.
 
-#### The full PR lifecycle in 4 commands
+### The full PR lifecycle in 4 commands
 
 ```bash
 # 1. Create a branch and do your work
