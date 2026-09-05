@@ -205,7 +205,7 @@ If you've ever added a code quality checker, a Dependabot alternative, or a depl
 
 **Browsing:**
 
-Go to [github.com/marketplace](https://github.com/marketplace). You can filter by category (code quality, testing, deployment, monitoring, security, etc.) and by pricing (free vs. paid).
+Go to [github.com/marketplace](https://github.com/marketplace?type=apps). You can filter by category (code quality, testing, deployment, monitoring, security, etc.) and by pricing (free vs. paid).
 
 The most-used categories:
 

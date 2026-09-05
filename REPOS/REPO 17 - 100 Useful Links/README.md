@@ -217,7 +217,7 @@ For finding something to build, use, or contribute to.
 | --- | ------ | --------------- |
 | 91 | [GitHub Explore](https://github.com/explore) | GitHub's own discovery page for trending and recommended repos |
 | 92 | [GitHub Topics](https://github.com/topics) | Browse repos grouped by technology or subject |
-| 93 | [GitHub Marketplace](https://github.com/marketplace) | Apps and actions that plug directly into your workflow |
+| 93 | [GitHub Marketplace](https://github.com/marketplace?type=apps) | Apps and actions that plug directly into your workflow |
 | 94 | [GitHub Blog](https://github.blog) | Official announcements, engineering deep-dives, and guides |
 | 95 | [GitHub Status](https://www.githubstatus.com) | Real-time uptime and incident status for GitHub itself |
 | 96 | [Open Source Guides](https://opensource.guide) | GitHub's own guides on starting and maintaining OSS projects |
